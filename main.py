@@ -16,7 +16,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # ----- Load Data -----
-with open("delivery_health_tree_structured.json") as f:
+with open("delivery_health_tree_scenario.json") as f:
     tree_data = json.load(f)
 
 def build_radio_options(nodes, parent_path='', level=0):
