@@ -188,7 +188,7 @@ timeline = [
     ),
     (
         5,
-        "Platform API deprecation blockers",
+        "Platform API deprecation blockers -- t",
         long_paragraph(
             "Sprint 5 adds an external dependency.  Eight WIP items enter the"
             " 'Blocked – Awaiting Platform' status for an average of 4 days.  The"
