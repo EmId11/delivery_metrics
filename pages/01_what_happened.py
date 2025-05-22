@@ -147,14 +147,10 @@ md("Sustained drop from 8 → 5 maps to the period where refinement time-boxes w
 # ── timeline (each ≥ 500 words) ───────────────────────────
 md("### 2. Trigger timeline")
 
-def long_paragraph(*sentences, approx_words=520):
-    # join sentences, then pad with repeated neutral sentences to reach length
-    txt = " ".join(sentences)
-    filler_sent = ("The quantitative trend was unmistakable and required no subjective"
-                   " interpretation; each data point reinforced the previous one.")
-    while len(txt.split()) < approx_words:
-        txt += " " + filler_sent
-    return txt
+# ── helper used in timeline ───────────────────────────────
+def long_paragraph(*sentences):
+    """Return a single paragraph from the given sentences—no repeated filler."""
+    return " ".join(sentences)
 
 timeline = [
     (
