@@ -1,0 +1,5163 @@
+[
+  {
+    "indicator": "The amount of work in the system",
+    "description": "",
+    "metrics": [
+      {
+        "metric_name": "Total volume of work in progress - e.g. # of work items or total number of story points",
+        "value": 74.8,
+        "timeseries": [
+          72.3,
+          74.9,
+          73.9,
+          73.5,
+          77.8,
+          76.4,
+          76.5,
+          73.7,
+          73.7,
+          72.0,
+          74.9,
+          77.1
+        ]
+      },
+      {
+        "metric_name": "Age of unfinished work (average age of work in progress)",
+        "value": 49.8,
+        "timeseries": [
+          49.4,
+          47.3,
+          50.3,
+          52.4,
+          47.1,
+          50.6,
+          52.7,
+          48.5,
+          51.1,
+          51.8,
+          49.0,
+          52.4
+        ]
+      },
+      {
+        "metric_name": "# of sprints where departure is less than 40% of arrival",
+        "value": 28.4,
+        "timeseries": [
+          31.2,
+          27.9,
+          29.0,
+          28.9,
+          27.0,
+          25.5,
+          27.9,
+          28.2,
+          28.3,
+          29.3,
+          26.6,
+          30.1
+        ]
+      },
+      {
+        "metric_name": "WIP growth sprint-to-sprint",
+        "value": 51.7,
+        "timeseries": [
+          52.3,
+          53.0,
+          50.3,
+          51.7,
+          52.7,
+          52.4,
+          51.6,
+          54.3,
+          52.0,
+          54.2,
+          53.6,
+          50.2
+        ]
+      }
+    ],
+    "data_source": "Jira",
+    "children": [
+      {
+        "indicator": "Estimation effectiveness",
+        "description": "",
+        "metrics": [
+          {
+            "metric_name": "% of work items with no estimates",
+            "value": 68.5,
+            "timeseries": [
+              68.3,
+              71.1,
+              66.2,
+              66.5,
+              67.4,
+              68.5,
+              67.4,
+              70.1,
+              71.3,
+              70.7,
+              70.3,
+              71.3
+            ]
+          },
+          {
+            "metric_name": "Standard deviation of how long work items of the same estimate take",
+            "value": 26.6,
+            "timeseries": [
+              29.0,
+              25.2,
+              26.8,
+              27.0,
+              26.5,
+              24.5,
+              28.3,
+              24.1,
+              25.9,
+              23.6,
+              28.8,
+              27.5
+            ]
+          },
+          {
+            "metric_name": "% of work items where the initial estimate changes",
+            "value": 59.2,
+            "timeseries": [
+              57.9,
+              58.8,
+              60.8,
+              60.3,
+              56.4,
+              57.5,
+              59.5,
+              59.3,
+              58.0,
+              61.0,
+              57.1,
+              61.0
+            ]
+          },
+          {
+            "metric_name": "% of work items where the initial work item is split",
+            "value": 13.7,
+            "timeseries": [
+              15.1,
+              14.7,
+              12.0,
+              14.2,
+              13.1,
+              12.1,
+              12.4,
+              16.5,
+              13.7,
+              15.4,
+              15.4,
+              11.8
+            ]
+          }
+        ],
+        "data_source": "Jira",
+        "children": [
+          {
+            "indicator": "Consistency of estimation practices",
+            "description": "",
+            "metrics": [
+              {
+                "metric_name": "Team self-assessment score of consistency in regard to what we estimate (complexity, effort, uncertainty, risk, etc.)",
+                "value": 54.2,
+                "timeseries": [
+                  53.0,
+                  51.9,
+                  51.7,
+                  55.0,
+                  54.3,
+                  55.5,
+                  52.4,
+                  55.2,
+                  55.9,
+                  55.7,
+                  53.1,
+                  56.3
+                ]
+              },
+              {
+                "metric_name": "Team self-assessment score whether there's a DoD and whether they're estimating to it",
+                "value": 32.4,
+                "timeseries": [
+                  29.8,
+                  32.5,
+                  35.3,
+                  29.8,
+                  32.0,
+                  29.9,
+                  29.8,
+                  33.2,
+                  35.3,
+                  29.5,
+                  33.6,
+                  31.1
+                ]
+              },
+              {
+                "metric_name": "Team self-assessment score of how often they believe the team relies on 'historical record' to estimate or forecast",
+                "value": 73.9,
+                "timeseries": [
+                  76.3,
+                  73.6,
+                  74.9,
+                  72.4,
+                  75.0,
+                  75.9,
+                  70.9,
+                  71.1,
+                  76.4,
+                  72.4,
+                  71.5,
+                  73.5
+                ]
+              },
+              {
+                "metric_name": "Team self-assessment score of how confident they belive the team considers the end-to-end flow when estimating",
+                "value": 28.3,
+                "timeseries": [
+                  29.1,
+                  28.2,
+                  26.2,
+                  28.2,
+                  30.8,
+                  29.9,
+                  30.7,
+                  28.4,
+                  25.6,
+                  27.6,
+                  28.1,
+                  26.9
+                ]
+              },
+              {
+                "metric_name": "Team self-assessment score of how often work is estimated by someone other than the people doing the work",
+                "value": 13.6,
+                "timeseries": [
+                  11.8,
+                  16.3,
+                  11.3,
+                  15.3,
+                  12.0,
+                  12.3,
+                  11.1,
+                  11.5,
+                  14.9,
+                  15.5,
+                  13.1,
+                  12.8
+                ]
+              },
+              {
+                "metric_name": "Distribution of estimates and how close it is to the upper end",
+                "value": 43.2,
+                "timeseries": [
+                  43.3,
+                  40.8,
+                  46.2,
+                  43.3,
+                  44.4,
+                  44.9,
+                  43.1,
+                  42.2,
+                  45.7,
+                  46.2,
+                  45.3,
+                  41.5
+                ]
+              }
+            ],
+            "data_source": "Self-assessment",
+            "children": []
+          },
+          {
+            "indicator": "The effectiveness of the refinement process",
+            "description": "We cannot estimate effectively if we don't know enough about the work to be done. You need an effective refinement process in order to develop this 'good enough' understanding of the work need to estimate reasonably accurately",
+            "metrics": [
+              {
+                "metric_name": "% of work items where there were no Acceptance Criteria added when moved to 'In Progress'",
+                "value": 76.1,
+                "timeseries": [
+                  78.7,
+                  75.9,
+                  73.1,
+                  76.2,
+                  74.9,
+                  75.4,
+                  77.7,
+                  73.1,
+                  78.2,
+                  74.5,
+                  77.9,
+                  76.7
+                ]
+              },
+              {
+                "metric_name": "% of time work spends in various analysis/refinement states before 'In Progress'",
+                "value": 70.4,
+                "timeseries": [
+                  67.7,
+                  70.4,
+                  73.1,
+                  69.0,
+                  73.0,
+                  70.1,
+                  68.3,
+                  67.9,
+                  71.0,
+                  72.3,
+                  70.4,
+                  70.0
+                ]
+              },
+              {
+                "metric_name": "% of work items not linked to a higher-level work item (e.g. user stories not connected to features)",
+                "value": 61.8,
+                "timeseries": [
+                  61.9,
+                  59.7,
+                  59.1,
+                  61.5,
+                  60.7,
+                  64.3,
+                  62.9,
+                  59.5,
+                  62.0,
+                  63.9,
+                  60.2,
+                  62.9
+                ]
+              },
+              {
+                "metric_name": "% of work items with changes to acceptance criteria/sizing/splitting the work item etc. after work starts on them",
+                "value": 79.2,
+                "timeseries": [
+                  78.2,
+                  76.7,
+                  79.7,
+                  76.8,
+                  76.2,
+                  77.5,
+                  80.3,
+                  80.8,
+                  76.9,
+                  80.9,
+                  77.5,
+                  78.9
+                ]
+              },
+              {
+                "metric_name": "% of work items where the details that were captured at the moment the work item was created do not change",
+                "value": 44.9,
+                "timeseries": [
+                  44.7,
+                  47.0,
+                  44.2,
+                  45.0,
+                  45.5,
+                  43.7,
+                  46.1,
+                  44.4,
+                  42.9,
+                  45.7,
+                  45.5,
+                  42.9
+                ]
+              },
+              {
+                "metric_name": "Team self-assessment score of the effectiveness of refinement (a. the team rates how often they start work feeling that there is important information/details missing about the piece of work",
+                "value": 41.8,
+                "timeseries": [
+                  39.9,
+                  41.9,
+                  39.2,
+                  41.3,
+                  44.3,
+                  39.7,
+                  42.7,
+                  40.4,
+                  41.8,
+                  41.9,
+                  38.9,
+                  42.4
+                ]
+              },
+              {
+                "metric_name": "b. the team rates how often they stop working on something after encountering a major unknown)",
+                "value": 14.6,
+                "timeseries": [
+                  16.5,
+                  15.6,
+                  15.7,
+                  11.8,
+                  14.8,
+                  13.6,
+                  13.3,
+                  12.2,
+                  15.6,
+                  16.0,
+                  13.1,
+                  16.8
+                ]
+              }
+            ],
+            "data_source": "Jira; Self-assessment",
+            "children": []
+          },
+          {
+            "indicator": "The volume of 'dark work'",
+            "description": "Dark work obviously chips away from the capacity we can dedicate to taking new work, but because it's not visualised we can't count in when planning for a new increment, resulting in us not being able to accurately estimate how much work we can take in",
+            "metrics": [
+              {
+                "metric_name": "Team self-assessment score of how much work they estimate they do that's NOT visualised anywhere",
+                "value": 70.8,
+                "timeseries": [
+                  72.3,
+                  70.9,
+                  72.3,
+                  72.8,
+                  71.5,
+                  68.1,
+                  72.0,
+                  68.8,
+                  67.9,
+                  69.2,
+                  70.3,
+                  73.5
+                ]
+              }
+            ],
+            "data_source": "Self-assessment",
+            "children": []
+          },
+          {
+            "indicator": "The volume of 'carryover'",
+            "description": "Half-finished work is very difficult to estimate, resulting in us not being able to predict how much work remains (and therefore how much capacity to allocate to it). Also, a history of half-finished work being carried over to a new sprint/quarter means we can't rely on our historical record to estimate how much work we can typically finish in a single timebox",
+            "metrics": [
+              {
+                "metric_name": "% of carry-over to total scope per sprint (or quarter) - calculating the # of carried over times or the total number of points being carried over.  2. % of work items that are finished in the same sprint they were started in",
+                "value": 76.9,
+                "timeseries": [
+                  74.6,
+                  76.2,
+                  79.7,
+                  75.7,
+                  77.6,
+                  79.3,
+                  74.3,
+                  76.1,
+                  75.9,
+                  74.7,
+                  74.7,
+                  79.0
+                ]
+              },
+              {
+                "metric_name": "% of features that were finished in the same quarter they were started in",
+                "value": 65.4,
+                "timeseries": [
+                  65.7,
+                  65.3,
+                  65.3,
+                  65.5,
+                  67.2,
+                  67.4,
+                  66.7,
+                  65.0,
+                  62.6,
+                  64.7,
+                  66.7,
+                  68.3
+                ]
+              }
+            ],
+            "data_source": "Jira",
+            "children": []
+          },
+          {
+            "indicator": "Avg work item size",
+            "description": "The larger the work item, the more difficult it is to estimate it. Indicators of whether the work item size is appropriate include how often we finish a piece of work in the same time box we started it, the actual amount of work we spend on it, and the variation / consistency in how we size work items (if we don't have a standard definition of what a 3 is, and given how people usually tend to underestimate work, it's likely that we underestimate the real amount of work needed to deliver a piece of work - esp. work items on the larger side)",
+            "metrics": [
+              {
+                "metric_name": "% of work items that are finished in the same sprint they were started in",
+                "value": 21.9,
+                "timeseries": [
+                  21.5,
+                  21.8,
+                  21.6,
+                  19.2,
+                  20.7,
+                  21.7,
+                  22.2,
+                  24.5,
+                  20.8,
+                  19.2,
+                  20.1,
+                  21.1
+                ]
+              },
+              {
+                "metric_name": "% of features that were finished in the same quarter they were started in",
+                "value": 47.9,
+                "timeseries": [
+                  48.7,
+                  48.8,
+                  46.3,
+                  47.3,
+                  47.4,
+                  46.9,
+                  48.6,
+                  48.6,
+                  47.9,
+                  46.0,
+                  48.5,
+                  47.4
+                ]
+              },
+              {
+                "metric_name": "Total Touch Time",
+                "value": 35.7,
+                "timeseries": [
+                  34.1,
+                  36.2,
+                  33.1,
+                  34.2,
+                  33.3,
+                  35.0,
+                  33.0,
+                  38.3,
+                  36.3,
+                  35.6,
+                  35.4,
+                  33.1
+                ]
+              },
+              {
+                "metric_name": "Standard deviation of how long work items of the same estimate take",
+                "value": 65.4,
+                "timeseries": [
+                  66.0,
+                  66.0,
+                  62.7,
+                  66.9,
+                  65.3,
+                  62.5,
+                  63.7,
+                  67.6,
+                  67.2,
+                  65.4,
+                  62.5,
+                  62.4
+                ]
+              },
+              {
+                "metric_name": "what percentile is this team/ToT in, in terms of how long on average a piece of work takes",
+                "value": 72.4,
+                "timeseries": [
+                  70.6,
+                  75.2,
+                  71.7,
+                  73.0,
+                  71.2,
+                  69.8,
+                  72.4,
+                  73.6,
+                  71.5,
+                  74.2,
+                  70.7,
+                  72.1
+                ]
+              },
+              {
+                "metric_name": "avg number of sprints a piece of work is carried over before it's 'done'",
+                "value": 73.0,
+                "timeseries": [
+                  71.6,
+                  70.4,
+                  72.4,
+                  74.2,
+                  75.1,
+                  74.0,
+                  70.7,
+                  75.3,
+                  70.5,
+                  71.3,
+                  74.3,
+                  72.3
+                ]
+              }
+            ],
+            "data_source": "Jira",
+            "children": []
+          },
+          {
+            "indicator": "Volume of dependencies",
+            "description": "Dependencies affect our ability to estimate, because they affect our assessment of complexity. A piece with non-trivial dependencies is difficult to estimate because a sizable portion of it will be determined by an outside entity. Even if the piece of work to be estimated has no dependencies, the fact that the team is dealing with a lot of inter- and intra-team dependencies means that (1) we can't really rely much on historical record to relatively estimate a piece of work OR determine our true capacity",
+            "metrics": [
+              {
+                "metric_name": "Dependency density for the time period in question (within the team)",
+                "value": 14.0,
+                "timeseries": [
+                  14.9,
+                  13.3,
+                  12.1,
+                  11.8,
+                  15.7,
+                  16.3,
+                  12.6,
+                  12.5,
+                  13.6,
+                  14.3,
+                  11.6,
+                  16.2
+                ]
+              },
+              {
+                "metric_name": "% of work items with dependencies on other/outside teams",
+                "value": 11.3,
+                "timeseries": [
+                  11.4,
+                  10.1,
+                  12.9,
+                  9.5,
+                  9.1,
+                  12.9,
+                  9.3,
+                  11.2,
+                  12.7,
+                  8.7,
+                  9.1,
+                  9.0
+                ]
+              },
+              {
+                "metric_name": "% total story points affected by outside dependencies to total story points of the time interval",
+                "value": 39.3,
+                "timeseries": [
+                  38.6,
+                  39.3,
+                  38.8,
+                  39.2,
+                  38.2,
+                  42.2,
+                  40.2,
+                  38.8,
+                  37.9,
+                  41.5,
+                  38.3,
+                  38.7
+                ]
+              },
+              {
+                "metric_name": "Team self-assessment score of how often they stop working on an item waiting for an external dependency to be resolved",
+                "value": 55.9,
+                "timeseries": [
+                  53.4,
+                  54.2,
+                  57.6,
+                  56.9,
+                  56.3,
+                  56.9,
+                  53.6,
+                  58.8,
+                  56.9,
+                  54.0,
+                  53.0,
+                  56.8
+                ]
+              }
+            ],
+            "data_source": "Jira; Self-assessment",
+            "children": []
+          },
+          {
+            "indicator": "Team member allocation",
+            "description": "If you have team members who are only partially allocated to a team (esp. if to more than 2 teams), then it becomes difficult to estimate the team's true capacity (too many things can go wrong in any of the teams of which this person is a member). It's difficult to forecast how much work you can do if you have a key team member who may or may not be able to work a certain number of hours/days this sprint or quarter",
+            "metrics": [
+              {
+                "metric_name": "% of team members who are also being assigned work in other teams",
+                "value": 57.8,
+                "timeseries": [
+                  55.3,
+                  56.5,
+                  60.0,
+                  55.6,
+                  58.4,
+                  55.8,
+                  57.6,
+                  56.8,
+                  59.3,
+                  57.3,
+                  56.5,
+                  55.3
+                ]
+              },
+              {
+                "metric_name": "% of team members with a high variation in the total number of hours worked per timebox (sprint or quarter)",
+                "value": 44.8,
+                "timeseries": [
+                  47.8,
+                  43.5,
+                  43.0,
+                  45.1,
+                  43.6,
+                  42.4,
+                  41.9,
+                  46.9,
+                  43.7,
+                  45.8,
+                  46.9,
+                  46.0
+                ]
+              },
+              {
+                "metric_name": "changes in team measured through % of team members who have been contributing over n months",
+                "value": 79.6,
+                "timeseries": [
+                  78.1,
+                  79.2,
+                  81.5,
+                  80.9,
+                  81.9,
+                  81.1,
+                  82.2,
+                  79.9,
+                  81.2,
+                  80.2,
+                  81.2,
+                  81.5
+                ]
+              },
+              {
+                "metric_name": "Team self-assessment ~ team members to indicate whether or not they're 100% dedicated to the team",
+                "value": 49.0,
+                "timeseries": [
+                  51.0,
+                  49.9,
+                  46.3,
+                  48.5,
+                  49.9,
+                  50.8,
+                  46.4,
+                  51.4,
+                  51.6,
+                  49.0,
+                  49.1,
+                  48.4
+                ]
+              }
+            ],
+            "data_source": "Jira; Self-assessment",
+            "children": []
+          },
+          {
+            "indicator": "Reliability & consistency of yesterday's weather",
+            "description": "If the data isn't consistent or there's high variance - one sprint our velocity is high, next one there's nothing, possibly due to large batches & constant interruption - then it's difficult to rely on 'yesterday's weather' to determine how much work to take in",
+            "metrics": [
+              {
+                "metric_name": "Variance in throughput / velocity",
+                "value": 19.6,
+                "timeseries": [
+                  19.4,
+                  21.8,
+                  16.8,
+                  20.6,
+                  17.8,
+                  19.5,
+                  17.3,
+                  22.3,
+                  17.7,
+                  18.1,
+                  20.6,
+                  17.8
+                ]
+              }
+            ],
+            "data_source": "Jira",
+            "children": []
+          }
+        ]
+      },
+      {
+        "indicator": "Ability to prioritise effectively",
+        "description": "If we have a number of things that we consider important and must get done quickly, but we can\u2019t really decide which should be done first, then we might end up committing to / taking in too much new work",
+        "metrics": [
+          {
+            "metric_name": "% of work items that are not linked to a higher-level work item or goal",
+            "value": 47.9,
+            "timeseries": [
+              48.7,
+              49.1,
+              46.0,
+              48.5,
+              45.0,
+              45.5,
+              50.7,
+              48.7,
+              46.5,
+              48.5,
+              49.2,
+              46.4
+            ]
+          },
+          {
+            "metric_name": "% of sprints with no sprint goals",
+            "value": 67.5,
+            "timeseries": [
+              66.1,
+              70.1,
+              67.0,
+              69.7,
+              65.2,
+              69.7,
+              65.7,
+              66.5,
+              70.4,
+              70.2,
+              66.8,
+              65.8
+            ]
+          },
+          {
+            "metric_name": "% of movement in the timebox (work coming out)",
+            "value": 53.5,
+            "timeseries": [
+              54.6,
+              51.4,
+              52.5,
+              53.2,
+              53.1,
+              51.6,
+              53.6,
+              50.8,
+              54.8,
+              51.1,
+              56.4,
+              55.5
+            ]
+          },
+          {
+            "metric_name": "% of movement in the sprint (new work going in)",
+            "value": 71.0,
+            "timeseries": [
+              68.0,
+              68.6,
+              71.9,
+              71.3,
+              71.2,
+              72.7,
+              69.7,
+              70.7,
+              70.2,
+              73.0,
+              71.9,
+              69.3
+            ]
+          },
+          {
+            "metric_name": "% of user stories that were moved to rejected/closed without being completed",
+            "value": 19.9,
+            "timeseries": [
+              20.1,
+              22.1,
+              20.8,
+              17.6,
+              18.9,
+              20.1,
+              18.6,
+              17.1,
+              22.9,
+              17.4,
+              21.1,
+              17.3
+            ]
+          },
+          {
+            "metric_name": "% of work items that have been in refinement/analysis more than a month and still weren't added to a sprint",
+            "value": 10.8,
+            "timeseries": [
+              12.0,
+              13.8,
+              11.4,
+              8.0,
+              13.7,
+              8.2,
+              8.7,
+              11.8,
+              12.5,
+              8.4,
+              11.3,
+              8.7
+            ]
+          },
+          {
+            "metric_name": "Team self-assessment of how often priorities / focus areas change",
+            "value": 19.3,
+            "timeseries": [
+              21.1,
+              18.7,
+              17.5,
+              20.9,
+              19.1,
+              17.1,
+              21.4,
+              16.9,
+              20.4,
+              19.3,
+              17.8,
+              16.9
+            ]
+          }
+        ],
+        "data_source": "Jira; Self-assessment",
+        "children": []
+      },
+      {
+        "indicator": " Upstream capacity availability",
+        "description": "carryover  plays a role in increasing WIP in different ways - here though, we're particularly focused on one aspect: that because a lot of carryover happens somewhat down stream, we feel tempted to bring in *new work* to our system (because the upstream is idle). Due to factors like the size of work items, our pattern of starting work, and the level of specialisation, we might find that most of the carried over work wasn't pending / in backlog. To keep the upstream busy/utilised, new work is brought into the system. This is why, despite having a lot of carry over, teams still opt to bring in a lot of new work.",
+        "metrics": [
+          {
+            "metric_name": "% of carry-over work that was in dev (first stage in workflow)",
+            "value": 52.1,
+            "timeseries": [
+              54.8,
+              49.2,
+              53.9,
+              50.1,
+              53.3,
+              50.6,
+              54.3,
+              50.4,
+              51.4,
+              51.8,
+              53.8,
+              52.8
+            ]
+          }
+        ],
+        "data_source": "Jira",
+        "children": [
+          {
+            "indicator": "Patterns of starting work",
+            "description": "One reason why there's a lot of downstream carryover is because we tend to start many work items at once, so a big batch of work arrives at downstream steps late in the timebox (an examplew would be testing being idle at the start and then close to end of the sprint are overwhelmed with work)",
+            "metrics": [
+              {
+                "metric_name": "Pattern of work arrival at downstream steps (taking them one by one). For each step, calculate the Coefficient of Variation and plot the arrival pattern",
+                "value": 67.7,
+                "timeseries": [
+                  69.7,
+                  69.6,
+                  70.7,
+                  69.4,
+                  69.5,
+                  65.0,
+                  70.6,
+                  67.6,
+                  67.4,
+                  64.7,
+                  69.7,
+                  67.7
+                ]
+              },
+              {
+                "metric_name": "How many new work items we start every sprint vs. total committed scope AND total delivered scope",
+                "value": 29.7,
+                "timeseries": [
+                  29.4,
+                  29.6,
+                  32.5,
+                  27.4,
+                  29.0,
+                  29.4,
+                  31.9,
+                  29.0,
+                  30.3,
+                  29.4,
+                  27.1,
+                  30.4
+                ]
+              },
+              {
+                "metric_name": "Team self-assessment ask QA to describe the pattern of work arrival",
+                "value": 69.0,
+                "timeseries": [
+                  67.1,
+                  70.9,
+                  67.2,
+                  66.4,
+                  66.2,
+                  67.4,
+                  66.8,
+                  70.4,
+                  67.5,
+                  70.3,
+                  66.5,
+                  72.0
+                ]
+              }
+            ],
+            "data_source": "Jira",
+            "children": []
+          },
+          {
+            "indicator": "Cross-functionality",
+            "description": "Lack of cross functionality - unwillingness, inability, or both - result in a situation where, despite having a lot of carried over work in downstream steps, those in upstream pull in new work instead of collaborating with those downstream to already in-progress work to done",
+            "metrics": [
+              {
+                "metric_name": "Team self-assessment score of how often do they collaborate across-functions to get things done if there's work piling up",
+                "value": 62.2,
+                "timeseries": [
+                  59.2,
+                  63.1,
+                  64.1,
+                  60.0,
+                  60.0,
+                  62.8,
+                  63.4,
+                  64.3,
+                  62.6,
+                  61.8,
+                  63.0,
+                  61.3
+                ]
+              }
+            ],
+            "data_source": "Self-assessment",
+            "children": []
+          }
+        ]
+      },
+      {
+        "indicator": "Dependencies and blockers",
+        "description": "Having a large number of dependencies that take a long time would mean that the team would be faced with either be idle waiting for things to be resolved OR pull in new work while the dependencies/blockers are being worked through. So, in addition to directly impacting cycle time, blockers and dependencies indirectly increase cycle time by creating incentive for the team to pull in more and more work",
+        "metrics": [
+          {
+            "metric_name": "Avg time a blocker takes to be resolved (from the time the blocker was raised to the time it was resolved/lifted)",
+            "value": 33.0,
+            "timeseries": [
+              30.7,
+              31.7,
+              34.6,
+              30.7,
+              34.2,
+              30.8,
+              35.2,
+              31.9,
+              34.2,
+              32.6,
+              30.1,
+              32.8
+            ]
+          },
+          {
+            "metric_name": "# of blockers raised per sprint",
+            "value": 19.1,
+            "timeseries": [
+              20.8,
+              22.0,
+              19.8,
+              16.3,
+              19.5,
+              18.0,
+              16.1,
+              17.2,
+              19.3,
+              22.0,
+              16.4,
+              21.3
+            ]
+          },
+          {
+            "metric_name": "How much time is lost to dependencies (by comparing the avg time each work item size takes with and without dependencies)",
+            "value": 49.6,
+            "timeseries": [
+              49.5,
+              47.1,
+              48.1,
+              46.7,
+              51.6,
+              48.8,
+              46.8,
+              51.8,
+              51.2,
+              52.5,
+              49.0,
+              47.7
+            ]
+          },
+          {
+            "metric_name": "Team self-assessment score of how often do they feel they have to pull in new work because existing work is blocked",
+            "value": 65.5,
+            "timeseries": [
+              68.2,
+              67.4,
+              66.8,
+              68.2,
+              67.4,
+              65.5,
+              66.4,
+              66.1,
+              64.0,
+              66.3,
+              64.5,
+              64.2
+            ]
+          }
+        ],
+        "data_source": "Jira; Self-assessment",
+        "children": []
+      },
+      {
+        "indicator": "Size of work items (this is specifically in the context of work coming into a timebox)",
+        "description": "Large work items - on any level - mean that it's difficult to gauge how much to bring in and how much we've been able to do in the past, leading to overcommitment. Large work items also increase the likelihood of some parts of the pipeline being busy while others being idle, resulting in us bringing in too much work.",
+        "metrics": [
+          {
+            "metric_name": "what percentile is this team/ToT in, in terms of how long on average a piece of work takes",
+            "value": 52.7,
+            "timeseries": [
+              51.3,
+              54.6,
+              50.8,
+              53.1,
+              51.4,
+              52.3,
+              53.0,
+              53.9,
+              51.1,
+              54.0,
+              53.6,
+              54.0
+            ]
+          },
+          {
+            "metric_name": "avg number of sprints a piece of work is carried over before it's 'done'",
+            "value": 31.9,
+            "timeseries": [
+              33.9,
+              30.3,
+              29.4,
+              32.2,
+              30.6,
+              34.1,
+              34.9,
+              29.2,
+              32.4,
+              29.4,
+              30.9,
+              33.5
+            ]
+          }
+        ],
+        "data_source": "Jira",
+        "children": [
+          {
+            "indicator": "Team policies",
+            "description": "Teams that do not have a policy that guide how big a work item can be and what to do if a work item is too large typically end up with work items that are too large and don't have an incentive to try and break them down",
+            "metrics": [
+              {
+                "metric_name": "Team self-assessment score of how strongly they agree with the sentence that they have a clear definition of what 'too big' means in the context of work items and that they have a consistent approach of responding when a work item is considered too big",
+                "value": 70.0,
+                "timeseries": [
+                  67.8,
+                  70.1,
+                  67.1,
+                  69.8,
+                  69.6,
+                  69.9,
+                  67.2,
+                  70.0,
+                  71.9,
+                  72.0,
+                  70.5,
+                  67.7
+                ]
+              }
+            ],
+            "data_source": "Self-assessment",
+            "children": []
+          },
+          {
+            "indicator": "Consistency of estimation practices",
+            "description": "",
+            "metrics": [
+              {
+                "metric_name": "Team self-assessment score of consistency in regard to what we estimate (complexity, effort, uncertainty, risk, etc.)",
+                "value": 61.5,
+                "timeseries": [
+                  62.2,
+                  58.8,
+                  64.3,
+                  60.7,
+                  63.6,
+                  63.3,
+                  61.5,
+                  61.2,
+                  63.0,
+                  62.9,
+                  58.8,
+                  61.2
+                ]
+              },
+              {
+                "metric_name": "Team self-assessment score whether there's a DoD and whether they're estimating to it",
+                "value": 79.3,
+                "timeseries": [
+                  79.7,
+                  80.6,
+                  81.2,
+                  78.6,
+                  78.3,
+                  78.4,
+                  80.3,
+                  78.1,
+                  82.3,
+                  79.0,
+                  77.4,
+                  77.2
+                ]
+              },
+              {
+                "metric_name": "Team self-assessment score of how often they believe the team relies on 'historical record' to estimate or forecast",
+                "value": 45.6,
+                "timeseries": [
+                  47.0,
+                  45.1,
+                  44.7,
+                  44.4,
+                  47.9,
+                  47.6,
+                  47.7,
+                  46.8,
+                  44.0,
+                  42.9,
+                  48.0,
+                  48.4
+                ]
+              },
+              {
+                "metric_name": "Team self-assessment score of how confident they belive the team considers the end-to-end flow when estimating",
+                "value": 29.4,
+                "timeseries": [
+                  29.6,
+                  30.1,
+                  31.2,
+                  26.8,
+                  31.6,
+                  27.3,
+                  29.2,
+                  31.2,
+                  26.5,
+                  30.7,
+                  31.4,
+                  27.8
+                ]
+              },
+              {
+                "metric_name": "Team self-assessment score of how often work is estimated by someone other than the people doing the work",
+                "value": 64.0,
+                "timeseries": [
+                  62.6,
+                  64.0,
+                  63.8,
+                  66.8,
+                  66.6,
+                  63.2,
+                  63.9,
+                  61.6,
+                  62.7,
+                  62.6,
+                  64.4,
+                  61.6
+                ]
+              },
+              {
+                "metric_name": "Team self-assessment score of how comfortable they feel splitting work items / how hard it is",
+                "value": 71.0,
+                "timeseries": [
+                  71.0,
+                  69.5,
+                  68.8,
+                  69.8,
+                  70.5,
+                  69.2,
+                  70.1,
+                  68.2,
+                  69.4,
+                  69.9,
+                  72.1,
+                  70.0
+                ]
+              },
+              {
+                "metric_name": "Distribution of estimates and how close it is to the upper end",
+                "value": 46.0,
+                "timeseries": [
+                  46.0,
+                  48.4,
+                  45.0,
+                  43.2,
+                  45.0,
+                  46.0,
+                  48.1,
+                  47.7,
+                  43.9,
+                  47.2,
+                  47.7,
+                  47.8
+                ]
+              }
+            ],
+            "data_source": "Jira; Self-assessment",
+            "children": []
+          },
+          {
+            "indicator": "The effectiveness of the refinement process",
+            "description": "We cannot estimate effectively if we don't know enough about the work to be done. You need an effective refinement process in order to develop this 'good enough' understanding of the work need to estimate reasonably accurately",
+            "metrics": [
+              {
+                "metric_name": "% of work items where there were no Acceptance Criteria added when moved to 'In Progress'",
+                "value": 50.2,
+                "timeseries": [
+                  50.6,
+                  48.6,
+                  49.0,
+                  52.2,
+                  52.6,
+                  47.5,
+                  52.6,
+                  50.3,
+                  52.1,
+                  48.2,
+                  51.6,
+                  51.1
+                ]
+              },
+              {
+                "metric_name": "% of time work spends in various analysis/refinement states before 'In Progress'",
+                "value": 67.2,
+                "timeseries": [
+                  69.3,
+                  67.9,
+                  69.8,
+                  68.8,
+                  65.8,
+                  68.1,
+                  64.7,
+                  67.1,
+                  69.1,
+                  64.2,
+                  65.6,
+                  67.1
+                ]
+              },
+              {
+                "metric_name": "% of work items not linked to a higher-level work item (e.g. user stories not connected to features)",
+                "value": 21.0,
+                "timeseries": [
+                  20.4,
+                  20.6,
+                  22.4,
+                  21.3,
+                  21.3,
+                  18.6,
+                  23.0,
+                  21.9,
+                  22.8,
+                  18.0,
+                  19.7,
+                  23.2
+                ]
+              },
+              {
+                "metric_name": "% of work items with changes to acceptance criteria/sizing/splitting the work item etc. after work starts on them",
+                "value": 58.3,
+                "timeseries": [
+                  57.9,
+                  59.0,
+                  59.9,
+                  59.4,
+                  55.9,
+                  58.3,
+                  60.9,
+                  60.6,
+                  60.0,
+                  60.2,
+                  60.8,
+                  55.4
+                ]
+              },
+              {
+                "metric_name": "% of work items where the details that were captured at the moment the work item was created do not change",
+                "value": 34.9,
+                "timeseries": [
+                  32.0,
+                  37.4,
+                  37.4,
+                  35.6,
+                  35.0,
+                  33.6,
+                  36.0,
+                  35.0,
+                  34.2,
+                  33.8,
+                  33.1,
+                  36.5
+                ]
+              },
+              {
+                "metric_name": "Team self-assessment score of the effectiveness of refinement (a. the team rates how often they start work feeling that there is important information/details missing about the piece of work",
+                "value": 78.5,
+                "timeseries": [
+                  81.2,
+                  78.6,
+                  75.7,
+                  78.1,
+                  77.6,
+                  78.7,
+                  78.8,
+                  75.9,
+                  78.1,
+                  80.1,
+                  76.8,
+                  77.8
+                ]
+              },
+              {
+                "metric_name": "b. the team rates how often they stop working on something after encountering a major unknown)",
+                "value": 42.7,
+                "timeseries": [
+                  41.1,
+                  44.2,
+                  41.4,
+                  41.1,
+                  44.3,
+                  40.5,
+                  39.9,
+                  44.1,
+                  40.4,
+                  41.6,
+                  44.0,
+                  43.4
+                ]
+              }
+            ],
+            "data_source": "Jira; Self-assessment",
+            "children": []
+          }
+        ]
+      },
+      {
+        "indicator": "Volume of interruptions",
+        "description": "Unplanned interrptions lead to accumulating WIP - when we do not re-prioritise to incorporate the new priorities. Interruption demand can happen due to multiple reasons  - mostly are related to how we manage scope and allocate buffer, or when we accept new work and when we say no. The key thing to remember is that we're mostly concerned with the type of interruptions that creates WIP - that is, interruptions that are not followed by reprioritisation",
+        "metrics": [
+          {
+            "metric_name": "avg % of interruption to total scope at the end of the timebox",
+            "value": 42.9,
+            "timeseries": [
+              43.0,
+              44.7,
+              40.0,
+              43.5,
+              40.8,
+              45.2,
+              41.6,
+              42.2,
+              40.2,
+              40.8,
+              41.8,
+              42.9
+            ]
+          },
+          {
+            "metric_name": "% of delta between how many work items (or how many total story points) were added mid-timebox vs removed before end of timebox to the total closing scope (scope at end of timebox) 3. % of sprints where that happens",
+            "value": 58.6,
+            "timeseries": [
+              55.8,
+              56.8,
+              61.5,
+              58.0,
+              59.1,
+              61.5,
+              57.5,
+              56.4,
+              56.9,
+              59.5,
+              61.0,
+              57.0
+            ]
+          }
+        ],
+        "data_source": "Jira",
+        "children": [
+          {
+            "indicator": "Volume of 'new request' or scope change interrputions",
+            "description": "One type of unplanned interruptions is change requests of all types - this refers to new 'change work' being added mid-timebox (without stuff leaving the backlog, ending up with over-commitment)",
+            "metrics": [
+              {
+                "metric_name": "% of 'change' interruptions to overall interruptions (change interruptions can be identified as stories added, as opposed to bugs or taks )",
+                "value": 71.4,
+                "timeseries": [
+                  74.2,
+                  71.6,
+                  73.4,
+                  68.9,
+                  72.6,
+                  73.3,
+                  72.6,
+                  71.1,
+                  69.6,
+                  71.8,
+                  70.6,
+                  69.4
+                ]
+              },
+              {
+                "metric_name": "Team self-assessment score of the % of production defects they actually add to their Jira board",
+                "value": 11.9,
+                "timeseries": [
+                  14.6,
+                  12.8,
+                  10.0,
+                  12.7,
+                  10.3,
+                  9.5,
+                  12.0,
+                  10.2,
+                  12.4,
+                  14.1,
+                  10.0,
+                  10.3
+                ]
+              }
+            ],
+            "data_source": "Jira; Self-assessment",
+            "children": [
+              {
+                "indicator": "Stakeholder visibility on short, medium and long-term goals",
+                "description": "When stakeholders aren't clear on what we want to achieve now, next and later, they will be more likely interrupt us with new ideas, requests etc. - the more they know about what we want to do and how our plans are aligned with their goals and plans, the less likely it is for them to interrupt us",
+                "metrics": [
+                  {
+                    "metric_name": "Team self-assessment score of how confident we feel that our stakeholders understand our short, medium and long-term goals",
+                    "value": 45.5,
+                    "timeseries": [
+                      47.6,
+                      47.1,
+                      46.7,
+                      46.8,
+                      43.6,
+                      46.0,
+                      45.3,
+                      47.0,
+                      44.8,
+                      47.6,
+                      43.9,
+                      45.9
+                    ]
+                  },
+                  {
+                    "metric_name": "Team self-assessment score of how confident we feel that we understand our stakeholders plans and goals (short, medium and long-term)",
+                    "value": 68.4,
+                    "timeseries": [
+                      66.7,
+                      71.3,
+                      71.0,
+                      71.1,
+                      70.2,
+                      65.8,
+                      67.5,
+                      68.3,
+                      69.9,
+                      67.4,
+                      69.3,
+                      71.3
+                    ]
+                  }
+                ],
+                "data_source": "Self-assessment",
+                "children": []
+              },
+              {
+                "indicator": "Stakeholder visibility on progress",
+                "description": "Another dimension is that, without having visibility on how well we're progressing to achieve agreed-upon goals and targets, stakeholders might be more likely to intervene, fearing that certain key things aren't being addressed",
+                "metrics": [
+                  {
+                    "metric_name": "Team self-assessment score of how often we hold sprint reviews (or similarly regular showcasing events)",
+                    "value": 17.1,
+                    "timeseries": [
+                      14.5,
+                      17.1,
+                      16.2,
+                      15.3,
+                      19.2,
+                      17.8,
+                      19.0,
+                      16.6,
+                      19.9,
+                      19.7,
+                      17.7,
+                      17.8
+                    ]
+                  },
+                  {
+                    "metric_name": "Team self-assessment score of the frequency of sprint reviews (or similarly regular showcasing events)",
+                    "value": 24.1,
+                    "timeseries": [
+                      25.4,
+                      21.5,
+                      24.9,
+                      25.6,
+                      22.9,
+                      26.0,
+                      23.3,
+                      23.0,
+                      26.1,
+                      26.1,
+                      26.4,
+                      26.2
+                    ]
+                  },
+                  {
+                    "metric_name": "Team self-assessment score of how often our key stakeholders attend our sprint reviews  (or similarly regular showcasing events)",
+                    "value": 35.7,
+                    "timeseries": [
+                      35.3,
+                      35.5,
+                      34.1,
+                      38.7,
+                      34.5,
+                      38.2,
+                      32.7,
+                      33.8,
+                      34.0,
+                      38.3,
+                      34.8,
+                      34.3
+                    ]
+                  }
+                ],
+                "data_source": "Self-assessment",
+                "children": []
+              },
+              {
+                "indicator": "Ability to push back against mid-timebox changes",
+                "description": "Another dimension is that, without having visibility on how well we're progressing to achieve agreed-upon goals and targets, stakeholders might be more likely to intervene, fearing that certain key things aren't being addressed",
+                "metrics": [
+                  {
+                    "metric_name": "Team self-assessment score of how strongly they agree that there exists a policy/process to determine when new work should be admitted and what happens next",
+                    "value": 75.7,
+                    "timeseries": [
+                      76.0,
+                      75.6,
+                      73.9,
+                      73.3,
+                      76.2,
+                      77.5,
+                      78.5,
+                      77.4,
+                      76.5,
+                      77.5,
+                      76.2,
+                      78.5
+                    ]
+                  },
+                  {
+                    "metric_name": "Team self-assessment score of how well they believe they as a team have been able to push back against mid-timebox interruptions",
+                    "value": 62.7,
+                    "timeseries": [
+                      60.7,
+                      62.4,
+                      62.2,
+                      60.5,
+                      64.0,
+                      65.4,
+                      62.2,
+                      64.9,
+                      64.0,
+                      65.4,
+                      60.1,
+                      63.4
+                    ]
+                  }
+                ],
+                "data_source": "Self-assessment",
+                "children": []
+              },
+              {
+                "indicator": "\"Buffer\" capacity allocation",
+                "description": "If no adequate capacity was reserved for known unknowns - given how often we get interrupted in the past - then this may result in increased WIP (interruptions coming in but no buffer, resulting in adding new work to existing scope). We need to see not only that we leave buffer, but that we leave 'enough' buffer",
+                "metrics": [
+                  {
+                    "metric_name": "Difference between avg available capacity (buffer) at the beginning of a timebox and avg mid-timebox  interruption (all types of interruption)",
+                    "value": 27.6,
+                    "timeseries": [
+                      28.1,
+                      24.6,
+                      29.9,
+                      28.3,
+                      26.9,
+                      30.2,
+                      27.6,
+                      26.5,
+                      26.1,
+                      30.4,
+                      28.4,
+                      26.8
+                    ]
+                  }
+                ],
+                "data_source": "Jira",
+                "children": []
+              },
+              {
+                "indicator": "\"new request\" interruption predictability",
+                "description": "Highly variable/unpredictable interrpution demand (new requests) makes it difficult to reserve buffer for potential changes, which increases the likelihood of over-committing at the start of the timebox",
+                "metrics": [
+                  {
+                    "metric_name": "Variance in the volume of mid-timebox added stories (volume measured as % of scope at the end of the sprint)",
+                    "value": 19.8,
+                    "timeseries": [
+                      20.2,
+                      22.2,
+                      19.8,
+                      21.5,
+                      21.7,
+                      19.1,
+                      21.3,
+                      19.6,
+                      18.3,
+                      17.3,
+                      19.8,
+                      17.2
+                    ]
+                  }
+                ],
+                "data_source": "Jira",
+                "children": []
+              },
+              {
+                "indicator": "Clarity of change requests",
+                "description": "If the change request has little information, this may cause back-and-forth and stopping to clarify what needs to be done, causing delays - delay increases the likelihood of taking up more work and increasing our WIP",
+                "metrics": [
+                  {
+                    "metric_name": "Avg % of change requests with no description, comments or acceptance criteria added to the timebox",
+                    "value": 45.4,
+                    "timeseries": [
+                      47.2,
+                      46.3,
+                      47.7,
+                      46.7,
+                      44.8,
+                      48.4,
+                      45.7,
+                      45.0,
+                      47.2,
+                      47.4,
+                      47.9,
+                      47.2
+                    ]
+                  },
+                  {
+                    "metric_name": "Avg % of change requests with blockers or dependencies",
+                    "value": 39.5,
+                    "timeseries": [
+                      41.5,
+                      41.8,
+                      38.7,
+                      42.3,
+                      40.6,
+                      39.2,
+                      37.2,
+                      38.1,
+                      37.0,
+                      42.5,
+                      41.7,
+                      42.2
+                    ]
+                  },
+                  {
+                    "metric_name": "Team self-assessment score of how often they receive requests (change requests) with not enough information about what exactly needs to be done",
+                    "value": 71.1,
+                    "timeseries": [
+                      72.6,
+                      73.2,
+                      71.8,
+                      73.8,
+                      73.3,
+                      72.8,
+                      70.6,
+                      69.1,
+                      71.5,
+                      74.1,
+                      72.4,
+                      72.4
+                    ]
+                  }
+                ],
+                "data_source": "Jira; Self-assessment",
+                "children": []
+              },
+              {
+                "indicator": "Effectiveness of front-door",
+                "description": "Teams where it's common for work to 'not' go through the PO and instead immeidately land on a team member's backlog have a higher risk of taking in too much work. Not having a single front door to the team means that work can come and be accepted without assessing capacity and team's existing priorities",
+                "metrics": [
+                  {
+                    "metric_name": "% of work items in the timebox that were moved to done where the PO was not present at all (didn't create the work item",
+                    "value": 51.5,
+                    "timeseries": [
+                      53.7,
+                      53.8,
+                      49.0,
+                      50.0,
+                      54.2,
+                      52.0,
+                      51.3,
+                      53.9,
+                      53.6,
+                      50.1,
+                      53.2,
+                      48.5
+                    ]
+                  },
+                  {
+                    "metric_name": "hasn't commented on it",
+                    "value": 56.1,
+                    "timeseries": [
+                      54.7,
+                      58.2,
+                      55.1,
+                      56.0,
+                      57.0,
+                      56.2,
+                      57.0,
+                      57.7,
+                      53.6,
+                      58.0,
+                      56.3,
+                      57.5
+                    ]
+                  },
+                  {
+                    "metric_name": "haven't moved it from one stage to another, etc.)",
+                    "value": 24.3,
+                    "timeseries": [
+                      23.5,
+                      23.8,
+                      23.8,
+                      26.4,
+                      24.8,
+                      24.5,
+                      24.3,
+                      24.7,
+                      27.0,
+                      26.1,
+                      22.1,
+                      26.7
+                    ]
+                  },
+                  {
+                    "metric_name": "Team self-assessment score of how often work comes straight to team members without going to the PO first",
+                    "value": 46.0,
+                    "timeseries": [
+                      48.8,
+                      47.4,
+                      43.6,
+                      48.3,
+                      44.3,
+                      45.0,
+                      46.3,
+                      47.4,
+                      47.9,
+                      43.4,
+                      43.4,
+                      43.2
+                    ]
+                  }
+                ],
+                "data_source": "Jira; Self-assessment",
+                "children": []
+              },
+              {
+                "indicator": "Effectiveness of timebox planning",
+                "description": "Ineffective planning means that work that wasn't well thought out finds its way to the sprint. Because it wasn't well thought out, the likelihood of us changing our minds and deciding that the work shouldn't be done now, or that the work isn't ready, or that something else more important ought to be worked on instead etc is high",
+                "metrics": [
+                  {
+                    "metric_name": "% of work items where there were no Acceptance Criteria added when moved to 'In Progress'",
+                    "value": 31.3,
+                    "timeseries": [
+                      33.0,
+                      33.3,
+                      31.0,
+                      30.0,
+                      33.8,
+                      33.2,
+                      30.2,
+                      32.0,
+                      32.7,
+                      30.0,
+                      33.6,
+                      29.2
+                    ]
+                  },
+                  {
+                    "metric_name": "% of work items where there were no estimates added when moved to 'In Progress'",
+                    "value": 36.4,
+                    "timeseries": [
+                      38.0,
+                      34.0,
+                      37.0,
+                      36.4,
+                      34.3,
+                      38.5,
+                      34.2,
+                      38.2,
+                      36.2,
+                      38.9,
+                      39.1,
+                      34.8
+                    ]
+                  },
+                  {
+                    "metric_name": "% of time work spends in various analysis/refinement states before 'In Progress'",
+                    "value": 56.6,
+                    "timeseries": [
+                      56.9,
+                      56.5,
+                      56.2,
+                      55.2,
+                      53.8,
+                      54.3,
+                      54.3,
+                      53.9,
+                      58.4,
+                      56.9,
+                      55.9,
+                      54.2
+                    ]
+                  },
+                  {
+                    "metric_name": "% of work items not linked to a higher-level work item (e.g. user stories not connected to features)",
+                    "value": 62.8,
+                    "timeseries": [
+                      63.2,
+                      61.3,
+                      65.4,
+                      61.7,
+                      62.7,
+                      62.4,
+                      61.5,
+                      65.4,
+                      61.2,
+                      62.0,
+                      63.8,
+                      59.9
+                    ]
+                  },
+                  {
+                    "metric_name": "% of work items with changes to acceptance criteria/sizing/splitting the work item etc. after work starts on them",
+                    "value": 44.8,
+                    "timeseries": [
+                      43.0,
+                      47.5,
+                      47.8,
+                      44.0,
+                      43.6,
+                      43.0,
+                      47.0,
+                      44.7,
+                      45.0,
+                      43.6,
+                      44.8,
+                      46.9
+                    ]
+                  },
+                  {
+                    "metric_name": "% of work items where the details that were captured at the moment the work item was created do not change",
+                    "value": 65.8,
+                    "timeseries": [
+                      63.2,
+                      65.2,
+                      63.6,
+                      68.1,
+                      66.9,
+                      68.5,
+                      65.9,
+                      67.2,
+                      63.7,
+                      65.2,
+                      68.1,
+                      64.3
+                    ]
+                  },
+                  {
+                    "metric_name": "% of sprints where there was no sprint goal",
+                    "value": 26.7,
+                    "timeseries": [
+                      25.9,
+                      28.5,
+                      28.3,
+                      28.6,
+                      28.6,
+                      24.9,
+                      24.4,
+                      29.1,
+                      26.7,
+                      24.3,
+                      26.7,
+                      27.0
+                    ]
+                  },
+                  {
+                    "metric_name": "Team self-assessment score of the effectiveness of refinement (a. the team rates how often they start work feeling that there is important information/details missing about the piece of work",
+                    "value": 27.9,
+                    "timeseries": [
+                      26.9,
+                      29.1,
+                      30.5,
+                      30.1,
+                      26.2,
+                      30.7,
+                      26.0,
+                      28.3,
+                      25.6,
+                      25.4,
+                      28.8,
+                      26.2
+                    ]
+                  },
+                  {
+                    "metric_name": "b. the team rates how often they stop working on something after encountering a major unknown)",
+                    "value": 13.1,
+                    "timeseries": [
+                      13.9,
+                      13.7,
+                      15.3,
+                      14.6,
+                      15.2,
+                      11.8,
+                      11.1,
+                      13.9,
+                      11.4,
+                      12.9,
+                      14.7,
+                      12.2
+                    ]
+                  }
+                ],
+                "data_source": "Jira; Self-assessment",
+                "children": []
+              },
+              {
+                "indicator": "Clarity of short-, medium-, and long-term goals",
+                "description": "Lack of an anchoring 'big picture' makes setting sprint goals and determining what should be done now, next and later difficult. Lack of such a picture forces the team to think tactically only, which leads to frequent pivots as it's difficult to prioritise when the long-term vision is not well understood/articulated",
+                "metrics": [
+                  {
+                    "metric_name": "Team self-assessment score of how well they believe they understand what the team is trying to achieve in the next 3, 6, and 12 months",
+                    "value": 18.5,
+                    "timeseries": [
+                      19.4,
+                      20.7,
+                      19.7,
+                      16.4,
+                      19.6,
+                      18.8,
+                      20.2,
+                      17.6,
+                      17.3,
+                      20.4,
+                      21.2,
+                      19.6
+                    ]
+                  }
+                ],
+                "data_source": "Self-assessment",
+                "children": []
+              }
+            ]
+          },
+          {
+            "indicator": "Volume of interruptions caused by BAU demand",
+            "description": "This is the \u2018Run the Product\u2019 stuff \u2013 anything that\u2019s not directly related to offering new capability or features to our customers, and NOT continuous improvement effort (e.g. refactoring). Minor changes to the product, platform changes/config (when we own the platform that others are leveraging), requests to specific team members due to their expertise or the fact that they\u2019re still the person responsible for tool X or asset Y, etc. -- every team deals with this, obviously - and, if it's an ops team, this IS the work - but we're trying to capture how *anticipated* this is",
+            "metrics": [
+              {
+                "metric_name": "% of 'BAU' interruptions to overall interruptions (BAU interruptions can be identified as tasks added, as opposed to bugs or stories )",
+                "value": 73.5,
+                "timeseries": [
+                  72.7,
+                  73.6,
+                  72.1,
+                  73.5,
+                  75.0,
+                  75.0,
+                  75.8,
+                  74.3,
+                  76.1,
+                  70.6,
+                  76.4,
+                  75.4
+                ]
+              },
+              {
+                "metric_name": "Team self-assessment score of the % of production defects they actually add to their Jira board",
+                "value": 77.3,
+                "timeseries": [
+                  75.2,
+                  77.6,
+                  77.4,
+                  78.5,
+                  79.4,
+                  75.8,
+                  75.9,
+                  78.0,
+                  78.8,
+                  74.4,
+                  80.2,
+                  75.1
+                ]
+              }
+            ],
+            "data_source": "Jira; Self-assessment",
+            "children": [
+              {
+                "indicator": "BAU interruption predictability",
+                "description": "Highly variable/unpredictable interrpution demand (BAU) makes it difficult to reserve buffer for potential requests, which increases the likelihood of over-committing at the start of the timebox",
+                "metrics": [
+                  {
+                    "metric_name": "Variance in the volume of mid-timebox added BAU tasks (volume measured as % of scope at the end of the sprint)",
+                    "value": 33.9,
+                    "timeseries": [
+                      33.8,
+                      32.9,
+                      33.4,
+                      36.1,
+                      31.5,
+                      31.9,
+                      31.9,
+                      34.5,
+                      33.4,
+                      32.6,
+                      30.9,
+                      33.2
+                    ]
+                  }
+                ],
+                "data_source": "Jira",
+                "children": []
+              },
+              {
+                "indicator": "\"Buffer\" capacity allocation",
+                "description": "If no adequate capacity was reserved for known unknowns - given how often we get interrupted in the past - then this may result in increased WIP (interruptions coming in but no buffer, resulting in adding new work to existing scope). We need to see not only that we leave buffer, but that we leave 'enough' buffer",
+                "metrics": [
+                  {
+                    "metric_name": "Difference between avg available capacity (buffer) at the beginning of a timebox and avg mid-timebox  interruption (all types of interruption)",
+                    "value": 79.3,
+                    "timeseries": [
+                      81.9,
+                      78.1,
+                      77.8,
+                      80.0,
+                      80.6,
+                      77.2,
+                      82.2,
+                      77.9,
+                      78.7,
+                      78.7,
+                      76.5,
+                      79.4
+                    ]
+                  }
+                ],
+                "data_source": "Jira",
+                "children": []
+              },
+              {
+                "indicator": "Clarity of BAU requests",
+                "description": "If the BAU request has little information, this may cause back-and-forth and stopping to clarify what needs to be done, causing delays - delay increases the likelihood of taking up more work and increasing our WIP ",
+                "metrics": [
+                  {
+                    "metric_name": "Avg % of BAU requests with no description, comments or acceptance criteria added to the timebox",
+                    "value": 65.4,
+                    "timeseries": [
+                      64.6,
+                      67.2,
+                      64.1,
+                      63.0,
+                      67.9,
+                      63.6,
+                      64.4,
+                      62.9,
+                      67.9,
+                      65.0,
+                      68.0,
+                      68.3
+                    ]
+                  },
+                  {
+                    "metric_name": "Avg % of BAU requests with blockers or dependencies",
+                    "value": 65.5,
+                    "timeseries": [
+                      65.3,
+                      62.6,
+                      67.5,
+                      68.2,
+                      63.3,
+                      65.1,
+                      68.2,
+                      62.7,
+                      65.1,
+                      67.1,
+                      66.3,
+                      62.7
+                    ]
+                  },
+                  {
+                    "metric_name": "Team self-assessment score of how often they receive requests (BAU requests) with not enough information about what exactly needs to be done",
+                    "value": 11.6,
+                    "timeseries": [
+                      10.4,
+                      12.1,
+                      13.7,
+                      13.4,
+                      11.4,
+                      11.6,
+                      11.1,
+                      10.5,
+                      12.4,
+                      14.2,
+                      12.1,
+                      13.8
+                    ]
+                  }
+                ],
+                "data_source": "Jira; Self-assessment",
+                "children": []
+              },
+              {
+                "indicator": "Effectiveness of BAU triage",
+                "description": "Not every request we receive is critical enough be addressed immediately at the risk of disrupting the timebox. An effective triage process would ensure that we have systemic checks we perform to ascertain the criticality of the request we're receiving",
+                "metrics": [
+                  {
+                    "metric_name": "Avg % of BAU requests that were added to the 'product' backlog vs. the 'sprint' backlog",
+                    "value": 21.4,
+                    "timeseries": [
+                      22.9,
+                      20.8,
+                      23.5,
+                      23.9,
+                      19.9,
+                      19.4,
+                      19.8,
+                      18.8,
+                      22.2,
+                      18.6,
+                      24.0,
+                      20.7
+                    ]
+                  },
+                  {
+                    "metric_name": "Team self-assessment score of how effective the team thinks their BAU triage process is (in ensuring they only work on the most critical stuff)",
+                    "value": 62.8,
+                    "timeseries": [
+                      63.0,
+                      63.2,
+                      64.2,
+                      61.2,
+                      60.1,
+                      63.7,
+                      62.6,
+                      63.7,
+                      64.4,
+                      60.1,
+                      60.7,
+                      64.6
+                    ]
+                  }
+                ],
+                "data_source": "Jira; Self-assessment",
+                "children": []
+              },
+              {
+                "indicator": "Average size of interrupting BAU requests",
+                "description": "large BAU requests that come mid time-box could result in an increase in total WIP volume. Large requests increase carryover (from the BAU requests themselves and/or the work that they stopped, as well as the potential of stoppages increases as the work item size increases -- unknowns, risks etc increase with size)",
+                "metrics": [
+                  {
+                    "metric_name": "% of BAU interruptions that are finished in the same sprint they were started in (+compare with other work)",
+                    "value": 43.0,
+                    "timeseries": [
+                      42.5,
+                      45.3,
+                      45.7,
+                      44.7,
+                      43.6,
+                      43.1,
+                      40.1,
+                      45.2,
+                      45.1,
+                      43.7,
+                      43.5,
+                      44.0
+                    ]
+                  },
+                  {
+                    "metric_name": "Total Touch Time for BAU interruptions (+compare with other work)",
+                    "value": 22.9,
+                    "timeseries": [
+                      25.8,
+                      21.0,
+                      19.9,
+                      21.0,
+                      22.5,
+                      22.8,
+                      24.6,
+                      24.6,
+                      23.6,
+                      25.6,
+                      20.1,
+                      24.4
+                    ]
+                  },
+                  {
+                    "metric_name": "Standard deviation of how long work items of the same estimate take (+compare with other work)",
+                    "value": 70.4,
+                    "timeseries": [
+                      68.9,
+                      67.6,
+                      71.2,
+                      70.3,
+                      70.1,
+                      70.3,
+                      72.2,
+                      69.3,
+                      71.7,
+                      71.7,
+                      72.5,
+                      71.4
+                    ]
+                  },
+                  {
+                    "metric_name": "what percentile is this team/ToT in, in terms of how long on average a piece of work takes (+compare with BAU interruptions avg for other teams AND other types of work for this team and others)",
+                    "value": 38.7,
+                    "timeseries": [
+                      37.1,
+                      37.8,
+                      41.0,
+                      37.3,
+                      39.6,
+                      38.1,
+                      40.3,
+                      38.2,
+                      37.5,
+                      39.8,
+                      37.0,
+                      38.5
+                    ]
+                  },
+                  {
+                    "metric_name": "avg number of sprints a piece of work is carried over before it's 'done' (+compare to other work)",
+                    "value": 55.4,
+                    "timeseries": [
+                      52.9,
+                      57.0,
+                      52.9,
+                      58.1,
+                      53.4,
+                      53.3,
+                      54.1,
+                      56.3,
+                      55.0,
+                      54.3,
+                      56.8,
+                      53.6
+                    ]
+                  }
+                ],
+                "data_source": "Jira",
+                "children": []
+              }
+            ]
+          },
+          {
+            "indicator": "Volume of interruptions caused by production defects",
+            "description": "Much like BAU interruption demand, production defects/escaped defects can result in increased WIP (among other things). The operating theory is that interruptions coupled with insufficient buffer will almost certainly lead to increased WIP. In terms of leading indicators, we're looking at (1) how we manage prod defects by looking at their predictability, the availability of buffer, our ability to prioritise (similar to BAU) etc., (2) and what's causing escaped defects in the first place (product quality)",
+            "metrics": [
+              {
+                "metric_name": "% of 'Production defect' interruptions to overall interruptions (prod defect interruptions can be identified with 'prod-defect' label added to a task)",
+                "value": 70.8,
+                "timeseries": [
+                  70.2,
+                  72.7,
+                  69.4,
+                  73.1,
+                  68.7,
+                  73.0,
+                  72.8,
+                  68.3,
+                  67.9,
+                  73.0,
+                  67.9,
+                  72.3
+                ]
+              },
+              {
+                "metric_name": "Team self-assessment score of the % of production defects they actually add to their Jira board",
+                "value": 56.6,
+                "timeseries": [
+                  55.9,
+                  53.7,
+                  54.4,
+                  58.6,
+                  58.6,
+                  56.4,
+                  58.7,
+                  58.2,
+                  55.1,
+                  55.4,
+                  53.8,
+                  54.5
+                ]
+              },
+              {
+                "metric_name": "% of release rollbacks",
+                "value": 56.1,
+                "timeseries": [
+                  58.2,
+                  55.2,
+                  54.8,
+                  55.0,
+                  56.3,
+                  56.4,
+                  53.7,
+                  58.1,
+                  55.8,
+                  58.9,
+                  53.5,
+                  54.3
+                ]
+              }
+            ],
+            "data_source": "Jira; Self-assessment",
+            "children": [
+              {
+                "indicator": "Prod defect interruption predictability (Prod defects management)",
+                "description": "Highly variable/unpredictable interrpution demand (BAU) makes it difficult to reserve buffer for potential requests, which increases the likelihood of over-committing at the start of the timebox",
+                "metrics": [
+                  {
+                    "metric_name": "Variance in the volume of mid-timebox added prod defect tasks (volume measured as % of scope at the end of the sprint)",
+                    "value": 28.7,
+                    "timeseries": [
+                      26.3,
+                      27.4,
+                      30.3,
+                      27.8,
+                      25.7,
+                      27.4,
+                      27.0,
+                      28.8,
+                      31.0,
+                      30.3,
+                      27.3,
+                      29.1
+                    ]
+                  }
+                ],
+                "data_source": "Jira",
+                "children": []
+              },
+              {
+                "indicator": "\"Buffer\" capacity allocation (Prod defects management)",
+                "description": "If no adequate capacity was reserved for known unknowns - given how often we get interrupted in the past - then this may result in increased WIP (interruptions coming in but no buffer, resulting in adding new work to existing scope). We need to see not only that we leave buffer, but that we leave 'enough' buffer",
+                "metrics": [
+                  {
+                    "metric_name": "Difference between avg available capacity (buffer) at the beginning of a timebox and avg mid-timebox  interruption (all types of interruption)",
+                    "value": 49.4,
+                    "timeseries": [
+                      51.8,
+                      47.8,
+                      48.5,
+                      47.1,
+                      52.1,
+                      51.6,
+                      51.4,
+                      49.1,
+                      52.1,
+                      48.1,
+                      48.0,
+                      47.3
+                    ]
+                  }
+                ],
+                "data_source": "Jira",
+                "children": []
+              },
+              {
+                "indicator": "Clarity of prod defect requests (Prod defects management)",
+                "description": "If the Prod defect request has little information, this may cause back-and-forth and stopping to clarify what needs to be done, causing delays - delay increases the likelihood of taking up more work and increasing our WIP ",
+                "metrics": [
+                  {
+                    "metric_name": "Avg % of prod defect requests with no description, comments or acceptance criteria added to the timebox",
+                    "value": 61.1,
+                    "timeseries": [
+                      63.6,
+                      59.5,
+                      61.3,
+                      59.7,
+                      63.7,
+                      60.0,
+                      63.7,
+                      62.8,
+                      60.1,
+                      61.2,
+                      60.1,
+                      59.6
+                    ]
+                  },
+                  {
+                    "metric_name": "Avg % of prod defect requests with blockers or dependencies",
+                    "value": 64.1,
+                    "timeseries": [
+                      65.5,
+                      63.4,
+                      65.4,
+                      62.3,
+                      63.1,
+                      61.5,
+                      64.2,
+                      65.4,
+                      62.7,
+                      65.4,
+                      64.6,
+                      64.6
+                    ]
+                  },
+                  {
+                    "metric_name": "Team self-assessment score of how often they receive requests (prod defect requests) with not enough information about what exactly needs to be done",
+                    "value": 56.2,
+                    "timeseries": [
+                      55.2,
+                      56.4,
+                      53.8,
+                      56.2,
+                      55.9,
+                      54.5,
+                      58.2,
+                      53.3,
+                      58.9,
+                      57.8,
+                      58.9,
+                      58.1
+                    ]
+                  }
+                ],
+                "data_source": "Jira; Self-assessment",
+                "children": []
+              },
+              {
+                "indicator": "Effectiveness of Prod defect triage (Prod defects management)",
+                "description": "Not every request we receive is critical enough be addressed immediately at the risk of disrupting the timebox. An effective triage process would ensure that we have systemic checks we perform to ascertain the criticality of the request we're receiving",
+                "metrics": [
+                  {
+                    "metric_name": "Avg % of prod defect requests that were added to the 'product' backlog vs. the 'sprint' backlog",
+                    "value": 26.8,
+                    "timeseries": [
+                      25.9,
+                      24.1,
+                      26.0,
+                      27.8,
+                      26.1,
+                      27.2,
+                      28.5,
+                      27.4,
+                      24.6,
+                      26.1,
+                      23.8,
+                      27.2
+                    ]
+                  },
+                  {
+                    "metric_name": "Team self-assessment score of how effective the team thinks their Prod defect triage process is (in ensuring they only work on the most critical stuff)",
+                    "value": 50.0,
+                    "timeseries": [
+                      49.4,
+                      49.7,
+                      49.3,
+                      52.9,
+                      49.9,
+                      48.1,
+                      48.9,
+                      49.7,
+                      52.2,
+                      51.7,
+                      49.6,
+                      47.9
+                    ]
+                  }
+                ],
+                "data_source": "Jira; Self-assessment",
+                "children": []
+              },
+              {
+                "indicator": "Average size of interrupting Prod defect requests (Prod defects management)",
+                "description": "large BAU requests that come mid time-box could result in an increase in total WIP volume. Large requests increase carryover (from the BAU requests themselves and/or the work that they stopped, as well as the potential of stoppages increases as the work item size increases -- unknowns, risks etc increase with size)",
+                "metrics": [
+                  {
+                    "metric_name": "% of Prod defect interruptions that are finished in the same sprint they were started in (+compare with other work)",
+                    "value": 24.7,
+                    "timeseries": [
+                      23.3,
+                      22.9,
+                      24.0,
+                      24.1,
+                      26.3,
+                      22.5,
+                      24.5,
+                      25.1,
+                      26.4,
+                      25.8,
+                      24.9,
+                      23.7
+                    ]
+                  },
+                  {
+                    "metric_name": "Total Touch Time for prod defect interruptions (+compare with other work)",
+                    "value": 21.5,
+                    "timeseries": [
+                      23.7,
+                      21.4,
+                      20.7,
+                      19.4,
+                      24.3,
+                      23.6,
+                      23.5,
+                      20.2,
+                      22.9,
+                      24.0,
+                      19.5,
+                      20.0
+                    ]
+                  },
+                  {
+                    "metric_name": "Standard deviation of how long work items of the same estimate take (+compare with other work)",
+                    "value": 15.5,
+                    "timeseries": [
+                      13.2,
+                      13.4,
+                      15.4,
+                      17.9,
+                      14.7,
+                      13.8,
+                      14.1,
+                      18.3,
+                      14.5,
+                      16.1,
+                      18.1,
+                      14.4
+                    ]
+                  },
+                  {
+                    "metric_name": "what percentile is this team/ToT in, in terms of how long on average a piece of work takes (+compare with Prod defect interruptions avg for other teams AND other types of work for this team and others)",
+                    "value": 48.2,
+                    "timeseries": [
+                      50.4,
+                      46.6,
+                      49.7,
+                      48.0,
+                      47.1,
+                      46.5,
+                      49.1,
+                      50.0,
+                      47.7,
+                      50.5,
+                      47.4,
+                      46.2
+                    ]
+                  },
+                  {
+                    "metric_name": "avg number of sprints a piece of work is carried over before it's 'done' (+compare to other work)",
+                    "value": 67.3,
+                    "timeseries": [
+                      69.8,
+                      69.6,
+                      69.6,
+                      67.1,
+                      69.6,
+                      66.2,
+                      69.4,
+                      69.1,
+                      66.9,
+                      68.4,
+                      64.8,
+                      66.2
+                    ]
+                  }
+                ],
+                "data_source": "Jira",
+                "children": []
+              },
+              {
+                "indicator": "Product quality",
+                "description": "There are two main components of prod defect-driven WIP increase: (1) we generate a lot of escaped defects due to lacking product quality, AND (2) we're not good at managing the defects coming (e.g. triaging what should be done now/later). The previous 4 metrics were assessing the management part, and this one focuses on the 'root cause' of this problem, namely quality",
+                "metrics": [
+                  {
+                    "metric_name": "# of escaped defects (+compare to other teams)",
+                    "value": 30.8,
+                    "timeseries": [
+                      33.1,
+                      33.2,
+                      30.3,
+                      29.0,
+                      30.0,
+                      32.4,
+                      31.3,
+                      33.1,
+                      30.6,
+                      31.1,
+                      29.9,
+                      31.7
+                    ]
+                  },
+                  {
+                    "metric_name": "'Reopened' Rate (after moved to Done)",
+                    "value": 19.9,
+                    "timeseries": [
+                      21.0,
+                      21.5,
+                      18.3,
+                      22.4,
+                      17.7,
+                      20.3,
+                      19.1,
+                      17.3,
+                      22.3,
+                      19.9,
+                      20.6,
+                      17.0
+                    ]
+                  },
+                  {
+                    "metric_name": "change failure rate",
+                    "value": 31.3,
+                    "timeseries": [
+                      32.3,
+                      30.4,
+                      32.8,
+                      30.8,
+                      31.9,
+                      34.0,
+                      30.4,
+                      28.8,
+                      28.4,
+                      31.3,
+                      32.6,
+                      30.8
+                    ]
+                  }
+                ],
+                "data_source": "Jira; Deployment tool",
+                "children": [
+                  {
+                    "indicator": "Comprehensiveness & consistent use of Definition of Done",
+                    "description": "The DoD includes all the checks that need to take place, all the various parts of the delivery machine that need to be involved, all the configurations that need to be done here and there, etc. before we can consider something 'done'. A less-than-comprehensive DoD - or a DoD that isn't always followed - may result in consistent quality, leading to an increase in prod defects",
+                    "metrics": [
+                      {
+                        "metric_name": "Variance in how long work items spend in each step of the workflow for each work item size",
+                        "value": 31.0,
+                        "timeseries": [
+                          30.6,
+                          31.5,
+                          29.9,
+                          30.8,
+                          32.0,
+                          32.3,
+                          32.2,
+                          29.3,
+                          33.7,
+                          28.6,
+                          28.1,
+                          30.8
+                        ]
+                      },
+                      {
+                        "metric_name": "the % of work items that are rejected/returned to the team following higher-level integration testing or release readiness testing",
+                        "value": 62.1,
+                        "timeseries": [
+                          64.7,
+                          64.4,
+                          64.0,
+                          63.7,
+                          60.5,
+                          63.7,
+                          63.0,
+                          62.3,
+                          60.2,
+                          63.3,
+                          59.1,
+                          60.0
+                        ]
+                      },
+                      {
+                        "metric_name": "Team self-assessment score of how clear, consistent and well-understood the process to get a piece of work to 'Done' is",
+                        "value": 52.2,
+                        "timeseries": [
+                          51.6,
+                          50.8,
+                          54.1,
+                          52.1,
+                          54.2,
+                          53.9,
+                          51.4,
+                          52.7,
+                          50.2,
+                          54.1,
+                          53.7,
+                          55.1
+                        ]
+                      }
+                    ],
+                    "data_source": "Jira; Self-assessment",
+                    "children": []
+                  },
+                  {
+                    "indicator": "Comprehensiveness & consistent use of Release readiness checklist",
+                    "description": "In situations where the DoD doesn't go all the way to production release, we also want to ensure that the release readiness checklist is 'good enough' to ensure that we don't release stuff that shouldn't have been in production in the first place, resulting in high prod defect demand",
+                    "metrics": [
+                      {
+                        "metric_name": "Variance in how long work items spend after marked 'Done' and released to prod",
+                        "value": 48.7,
+                        "timeseries": [
+                          50.9,
+                          46.5,
+                          51.5,
+                          46.3,
+                          48.4,
+                          50.3,
+                          46.3,
+                          48.4,
+                          49.6,
+                          49.0,
+                          48.5,
+                          49.3
+                        ]
+                      },
+                      {
+                        "metric_name": "Team self-assessment score of how clear, consistent and well-understood the process to get a piece of work to 'Done'",
+                        "value": 66.3,
+                        "timeseries": [
+                          68.8,
+                          64.6,
+                          68.7,
+                          67.8,
+                          65.7,
+                          66.3,
+                          64.7,
+                          67.2,
+                          66.6,
+                          65.7,
+                          67.6,
+                          64.2
+                        ]
+                      }
+                    ],
+                    "data_source": "Jira; Self-assessment",
+                    "children": []
+                  },
+                  {
+                    "indicator": "How quality is baked into how we build the product",
+                    "description": "If quality isn't embedded in how the team build the product, then it's inevitable that there will be prod defect demand ",
+                    "metrics": [
+                      {
+                        "metric_name": "% of 'first pass' work items",
+                        "value": 71.6,
+                        "timeseries": [
+                          70.2,
+                          70.6,
+                          73.7,
+                          71.5,
+                          71.7,
+                          70.5,
+                          72.8,
+                          72.3,
+                          70.3,
+                          71.4,
+                          70.3,
+                          70.8
+                        ]
+                      },
+                      {
+                        "metric_name": "Avg # of times a piece of work has to go back to dev before it clears QA",
+                        "value": 27.3,
+                        "timeseries": [
+                          30.3,
+                          28.8,
+                          25.8,
+                          29.4,
+                          27.5,
+                          25.0,
+                          29.5,
+                          29.8,
+                          27.3,
+                          24.5,
+                          29.2,
+                          27.4
+                        ]
+                      },
+                      {
+                        "metric_name": "bug rate (avg how many bugs per work item)",
+                        "value": 35.3,
+                        "timeseries": [
+                          37.6,
+                          32.8,
+                          35.1,
+                          34.1,
+                          35.5,
+                          33.7,
+                          36.1,
+                          33.0,
+                          37.0,
+                          34.1,
+                          37.5,
+                          35.6
+                        ]
+                      },
+                      {
+                        "metric_name": "Variance in how long on avg testing the same size work item takes",
+                        "value": 16.7,
+                        "timeseries": [
+                          17.2,
+                          17.5,
+                          17.8,
+                          16.9,
+                          18.8,
+                          14.9,
+                          14.5,
+                          18.0,
+                          14.0,
+                          15.3,
+                          16.4,
+                          14.0
+                        ]
+                      },
+                      {
+                        "metric_name": "test fail rate (from Zephyr)",
+                        "value": 46.6,
+                        "timeseries": [
+                          43.7,
+                          48.2,
+                          44.8,
+                          45.2,
+                          46.2,
+                          49.0,
+                          46.3,
+                          45.6,
+                          47.5,
+                          45.2,
+                          46.8,
+                          48.4
+                        ]
+                      },
+                      {
+                        "metric_name": "PR approval rate (% of PRs approved vs. those requesting change)",
+                        "value": 61.2,
+                        "timeseries": [
+                          62.5,
+                          60.0,
+                          63.4,
+                          63.1,
+                          58.4,
+                          62.4,
+                          59.3,
+                          61.5,
+                          64.2,
+                          58.3,
+                          58.2,
+                          61.7
+                        ]
+                      },
+                      {
+                        "metric_name": "PR re-work rate (% of PRs that require changes after initial review) 8. PR rejection rate (% of PRs closed without merging)",
+                        "value": 12.1,
+                        "timeseries": [
+                          10.7,
+                          11.6,
+                          15.0,
+                          14.8,
+                          13.1,
+                          10.0,
+                          11.8,
+                          11.7,
+                          13.0,
+                          12.6,
+                          14.0,
+                          13.2
+                        ]
+                      },
+                      {
+                        "metric_name": "Code churn",
+                        "value": 77.5,
+                        "timeseries": [
+                          77.4,
+                          78.4,
+                          76.4,
+                          77.8,
+                          79.3,
+                          77.6,
+                          78.3,
+                          80.5,
+                          76.9,
+                          78.1,
+                          77.4,
+                          77.3
+                        ]
+                      }
+                    ],
+                    "data_source": "Jira; Zephyr; Bitbucket",
+                    "children": [
+                      {
+                        "indicator": "Effectiveness of code reviews",
+                        "description": "The extent and effectiveness of code reviews are leading indicators to quality - our hypothesis is that subpar code reviews will result in higher defects making their way to QA, increasing the overall likelihood of escaped defects (and also slowing down testing, increasing WIP in other ways)",
+                        "metrics": [
+                          {
+                            "metric_name": "PR size (Avg. # of lines changed/files modified per PR)",
+                            "value": 71.5,
+                            "timeseries": [
+                              69.3,
+                              69.3,
+                              73.6,
+                              74.0,
+                              73.7,
+                              69.9,
+                              70.6,
+                              68.7,
+                              73.3,
+                              74.4,
+                              70.8,
+                              71.4
+                            ]
+                          },
+                          {
+                            "metric_name": "Avg time spent on code reviews",
+                            "value": 29.6,
+                            "timeseries": [
+                              28.5,
+                              29.1,
+                              28.8,
+                              29.4,
+                              30.2,
+                              29.6,
+                              31.0,
+                              30.2,
+                              30.0,
+                              31.3,
+                              30.4,
+                              26.6
+                            ]
+                          },
+                          {
+                            "metric_name": "Review depth (# of comments per PR)",
+                            "value": 49.8,
+                            "timeseries": [
+                              50.0,
+                              50.4,
+                              48.5,
+                              51.8,
+                              49.3,
+                              52.6,
+                              47.1,
+                              52.0,
+                              51.2,
+                              47.9,
+                              49.8,
+                              50.4
+                            ]
+                          },
+                          {
+                            "metric_name": "Avg. time between PR creation and first review",
+                            "value": 53.0,
+                            "timeseries": [
+                              55.6,
+                              51.1,
+                              52.8,
+                              50.9,
+                              53.6,
+                              55.5,
+                              51.7,
+                              51.6,
+                              51.5,
+                              52.9,
+                              50.2,
+                              50.1
+                            ]
+                          },
+                          {
+                            "metric_name": "Avg number of reviewers per PR",
+                            "value": 34.9,
+                            "timeseries": [
+                              34.5,
+                              35.6,
+                              37.2,
+                              34.4,
+                              37.3,
+                              33.8,
+                              32.3,
+                              33.5,
+                              35.3,
+                              32.1,
+                              37.0,
+                              32.1
+                            ]
+                          },
+                          {
+                            "metric_name": "Time to merge (avg. time from PR creation to merge)",
+                            "value": 44.5,
+                            "timeseries": [
+                              45.3,
+                              43.6,
+                              41.7,
+                              45.2,
+                              47.4,
+                              44.8,
+                              46.6,
+                              45.5,
+                              47.0,
+                              46.8,
+                              46.7,
+                              44.9
+                            ]
+                          },
+                          {
+                            "metric_name": "comment resolution time (Avg. ime to address review comments)",
+                            "value": 36.0,
+                            "timeseries": [
+                              35.8,
+                              33.7,
+                              33.6,
+                              34.5,
+                              35.4,
+                              38.6,
+                              36.2,
+                              33.9,
+                              38.2,
+                              33.9,
+                              34.1,
+                              37.9
+                            ]
+                          }
+                        ],
+                        "data_source": "Bitbucket",
+                        "children": []
+                      },
+                      {
+                        "indicator": "Work item size",
+                        "description": "Larger work items are riskier, potentially leading to more quality issues (which increases the likelihood of a defect escaping QA and making its way to production). We hypothesise that the number of bugs / risks etc. grows non-linearly as work item size grows. It is harder to embed quality in a larger work item than a smaller work item, and more likely for a bug to escape QA in a larger piece of work than a smaller one",
+                        "metrics": [
+                          {
+                            "metric_name": "% of work items that clear Dev in the same sprint they were started in",
+                            "value": 71.6,
+                            "timeseries": [
+                              71.8,
+                              73.5,
+                              70.0,
+                              69.6,
+                              74.6,
+                              70.2,
+                              68.7,
+                              70.8,
+                              69.1,
+                              70.2,
+                              74.4,
+                              74.6
+                            ]
+                          },
+                          {
+                            "metric_name": "Total Dev Touch Time",
+                            "value": 42.0,
+                            "timeseries": [
+                              39.9,
+                              43.5,
+                              39.9,
+                              39.2,
+                              41.1,
+                              40.9,
+                              39.3,
+                              40.4,
+                              41.2,
+                              44.1,
+                              40.9,
+                              43.1
+                            ]
+                          },
+                          {
+                            "metric_name": "Standard deviation of how long in Dev work items of the same estimate take",
+                            "value": 27.2,
+                            "timeseries": [
+                              26.5,
+                              27.4,
+                              26.3,
+                              28.6,
+                              29.5,
+                              26.0,
+                              28.9,
+                              24.9,
+                              30.2,
+                              28.7,
+                              27.0,
+                              29.7
+                            ]
+                          },
+                          {
+                            "metric_name": "what percentile is this team/ToT in, in terms of how long on average a piece of work takes",
+                            "value": 70.1,
+                            "timeseries": [
+                              69.4,
+                              70.8,
+                              67.3,
+                              67.4,
+                              67.4,
+                              70.6,
+                              70.4,
+                              69.1,
+                              70.6,
+                              71.1,
+                              72.5,
+                              69.8
+                            ]
+                          },
+                          {
+                            "metric_name": "avg number of sprints a piece of work is carried over before it clear development",
+                            "value": 34.5,
+                            "timeseries": [
+                              35.8,
+                              35.7,
+                              33.6,
+                              35.5,
+                              34.7,
+                              37.2,
+                              34.6,
+                              33.1,
+                              35.9,
+                              34.0,
+                              35.9,
+                              34.0
+                            ]
+                          }
+                        ],
+                        "data_source": "Jira",
+                        "children": []
+                      },
+                      {
+                        "indicator": "Unit test coverage",
+                        "description": "Lower test coverage increases the risk of latent bugs that might make their way to prod",
+                        "metrics": [
+                          {
+                            "metric_name": "% of code covered by unit tests",
+                            "value": 49.4,
+                            "timeseries": [
+                              49.2,
+                              47.3,
+                              52.2,
+                              49.8,
+                              49.6,
+                              49.3,
+                              50.9,
+                              49.1,
+                              50.5,
+                              47.7,
+                              52.2,
+                              47.3
+                            ]
+                          },
+                          {
+                            "metric_name": "Test coverage change (change in test coverage % per PR)",
+                            "value": 74.6,
+                            "timeseries": [
+                              76.1,
+                              76.8,
+                              75.9,
+                              76.0,
+                              75.7,
+                              73.7,
+                              74.6,
+                              76.5,
+                              75.8,
+                              74.1,
+                              71.6,
+                              72.4
+                            ]
+                          }
+                        ],
+                        "data_source": "Bitbucket",
+                        "children": []
+                      },
+                      {
+                        "indicator": "Code complexity",
+                        "description": "we hypothesise that  complexity, measured through cyclomatic complexity (CC), is a good leading indicator to quality. The more complex the code is, the higher the likelihood of breaking something while trying to integrate something new AND the likelihood of not fixing a problem as intended (also higher likelihood of QA missing where the problem is)",
+                        "metrics": [
+                          {
+                            "metric_name": "Code Complexity (1-5 low, 6-10 moderate, 11-20 high, 21+ very high)",
+                            "value": 24.1,
+                            "timeseries": [
+                              27.1,
+                              23.8,
+                              21.4,
+                              24.1,
+                              23.3,
+                              25.1,
+                              23.0,
+                              24.8,
+                              21.6,
+                              23.8,
+                              22.8,
+                              23.5
+                            ]
+                          },
+                          {
+                            "metric_name": "Maintainability Index (<10 difficult to maintain",
+                            "value": 64.0,
+                            "timeseries": [
+                              62.5,
+                              62.6,
+                              65.7,
+                              65.5,
+                              64.5,
+                              65.3,
+                              62.3,
+                              63.4,
+                              61.1,
+                              65.3,
+                              64.8,
+                              65.8
+                            ]
+                          },
+                          {
+                            "metric_name": "between 10-20 moderately maintainable",
+                            "value": 29.0,
+                            "timeseries": [
+                              29.2,
+                              30.0,
+                              26.2,
+                              30.9,
+                              30.4,
+                              31.3,
+                              26.4,
+                              27.3,
+                              29.9,
+                              28.8,
+                              29.6,
+                              26.7
+                            ]
+                          },
+                          {
+                            "metric_name": ">20 highly maintainable)",
+                            "value": 34.4,
+                            "timeseries": [
+                              34.3,
+                              34.4,
+                              36.8,
+                              31.6,
+                              34.4,
+                              36.5,
+                              34.9,
+                              35.9,
+                              33.7,
+                              34.2,
+                              35.4,
+                              31.7
+                            ]
+                          }
+                        ],
+                        "data_source": "Bitbucket",
+                        "children": []
+                      },
+                      {
+                        "indicator": "Dependencies",
+                        "description": "Looking both at code and architectural dependencies - the hypothesis is that dependencies not only slow down development and testing, but also that the more complex our dependencies are, the higher the likelihood of introducing bugs (higher risk of inadvertently breaking something). The higher the likelihood of introducing bugs, the higher the likelihood of bugs eventually making it to production",
+                        "metrics": [
+                          {
+                            "metric_name": "Code dependency index",
+                            "value": 47.6,
+                            "timeseries": [
+                              47.7,
+                              49.1,
+                              45.7,
+                              45.7,
+                              45.9,
+                              47.3,
+                              50.0,
+                              48.6,
+                              46.7,
+                              48.0,
+                              45.6,
+                              47.4
+                            ]
+                          },
+                          {
+                            "metric_name": "Architectural dependency index",
+                            "value": 13.5,
+                            "timeseries": [
+                              11.7,
+                              15.7,
+                              11.4,
+                              12.8,
+                              11.8,
+                              16.4,
+                              12.3,
+                              10.5,
+                              15.9,
+                              11.6,
+                              12.6,
+                              15.5
+                            ]
+                          }
+                        ],
+                        "data_source": "Bitbucket",
+                        "children": []
+                      },
+                      {
+                        "indicator": "Our ability to learn from mistakes",
+                        "description": "If the same bugs keep appearing again and again, then this is a symptom of our inability to incorporate learnings/lessons into improving how we develop - which could be indicative of other issues impeding our ability to embed quality into development - e.g. communication between dev & QA, dev & QA experience/craft mastery, unfamiliarity with the code base, etc.",
+                        "metrics": [
+                          {
+                            "metric_name": "% of recurring bugs (that is, bugs that are raised in timebox n that are similar to bugs that were previously raised in past timeboxes)",
+                            "value": 79.2,
+                            "timeseries": [
+                              79.9,
+                              76.4,
+                              78.1,
+                              80.7,
+                              81.1,
+                              78.1,
+                              79.0,
+                              79.6,
+                              76.5,
+                              79.7,
+                              80.6,
+                              79.5
+                            ]
+                          }
+                        ],
+                        "data_source": "Jira",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "indicator": "Requirements coverage with test cases",
+                    "description": "The comprehensiveness of our test cases and how they cover user stories is a leading indicator to quality - we rely on the requirements traceability matrix to assess how well requirements are covered",
+                    "metrics": [
+                      {
+                        "metric_name": "story count coverage % by tests",
+                        "value": 58.3,
+                        "timeseries": [
+                          56.0,
+                          56.4,
+                          58.4,
+                          56.2,
+                          59.2,
+                          56.1,
+                          57.4,
+                          55.8,
+                          56.8,
+                          57.6,
+                          60.8,
+                          58.8
+                        ]
+                      },
+                      {
+                        "metric_name": "story point count coverage % by tests",
+                        "value": 44.4,
+                        "timeseries": [
+                          41.5,
+                          42.7,
+                          42.2,
+                          43.0,
+                          45.8,
+                          46.4,
+                          42.8,
+                          45.7,
+                          47.1,
+                          47.4,
+                          45.1,
+                          46.3
+                        ]
+                      },
+                      {
+                        "metric_name": "Execution rate",
+                        "value": 31.4,
+                        "timeseries": [
+                          28.4,
+                          33.3,
+                          30.7,
+                          32.5,
+                          34.1,
+                          32.2,
+                          28.8,
+                          28.8,
+                          29.1,
+                          32.0,
+                          33.5,
+                          30.7
+                        ]
+                      },
+                      {
+                        "metric_name": "# of test cases per work item per size",
+                        "value": 20.1,
+                        "timeseries": [
+                          22.4,
+                          18.9,
+                          18.3,
+                          21.7,
+                          18.6,
+                          20.2,
+                          18.1,
+                          19.6,
+                          20.1,
+                          20.3,
+                          20.1,
+                          17.8
+                        ]
+                      },
+                      {
+                        "metric_name": "Variance of # of test cases per work item per size",
+                        "value": 39.2,
+                        "timeseries": [
+                          41.1,
+                          41.0,
+                          40.8,
+                          38.2,
+                          38.2,
+                          37.2,
+                          39.6,
+                          36.9,
+                          40.0,
+                          40.0,
+                          41.5,
+                          37.4
+                        ]
+                      }
+                    ],
+                    "data_source": "Jira; Zephyr",
+                    "children": []
+                  },
+                  {
+                    "indicator": "Clarity of understanding regarding what value the work item is supposed to deliver",
+                    "description": "If we release something that doesn't quite meet the needs of our customers, then it's inevitable that it would come back as production defect demand. We first need to determine how much of our prod defect demand is due to misunderstood requirements. This could be measured through metrics that show that things change - e.g. re-opened, flow-back, devs returning issue without adding stuff, comments, things changing after sprint starts like things being added etc. (esp. after first tests are executed), ",
+                    "metrics": [
+                      {
+                        "metric_name": "Avg % of re-opened work items",
+                        "value": 22.9,
+                        "timeseries": [
+                          25.6,
+                          25.6,
+                          25.3,
+                          21.6,
+                          22.6,
+                          25.6,
+                          23.7,
+                          24.3,
+                          24.5,
+                          25.6,
+                          24.7,
+                          23.4
+                        ]
+                      },
+                      {
+                        "metric_name": "Avg # of times work item bounces between QA & Dev before moving forward",
+                        "value": 64.3,
+                        "timeseries": [
+                          61.7,
+                          63.1,
+                          64.0,
+                          62.3,
+                          62.6,
+                          63.5,
+                          66.9,
+                          62.1,
+                          64.9,
+                          61.5,
+                          63.5,
+                          65.6
+                        ]
+                      },
+                      {
+                        "metric_name": "Avg # of times dev rejects bug",
+                        "value": 24.2,
+                        "timeseries": [
+                          26.4,
+                          21.9,
+                          25.3,
+                          21.5,
+                          23.6,
+                          23.1,
+                          22.9,
+                          23.8,
+                          23.7,
+                          22.6,
+                          25.8,
+                          21.4
+                        ]
+                      },
+                      {
+                        "metric_name": "% of work items where 'comment sentiment' indicates lack of shared understanding of what work item should deliver",
+                        "value": 24.3,
+                        "timeseries": [
+                          26.5,
+                          24.8,
+                          22.5,
+                          22.9,
+                          27.2,
+                          21.9,
+                          26.2,
+                          27.3,
+                          24.0,
+                          26.9,
+                          24.6,
+                          25.1
+                        ]
+                      },
+                      {
+                        "metric_name": "% of work items where changes (added ACs, changes in description, estimate, splitting work item) happen after work item has moved to In Progress",
+                        "value": 14.5,
+                        "timeseries": [
+                          12.9,
+                          16.5,
+                          14.2,
+                          13.8,
+                          12.8,
+                          16.0,
+                          15.5,
+                          16.5,
+                          12.6,
+                          13.8,
+                          15.4,
+                          14.4
+                        ]
+                      },
+                      {
+                        "metric_name": "% of work items where changes (added ACs, changes in description, estimate, splitting work item) happen after work item has moved to In QA",
+                        "value": 29.0,
+                        "timeseries": [
+                          30.9,
+                          30.0,
+                          32.0,
+                          28.6,
+                          27.0,
+                          31.6,
+                          31.7,
+                          26.4,
+                          28.8,
+                          30.7,
+                          30.7,
+                          28.5
+                        ]
+                      },
+                      {
+                        "metric_name": "% of work items that go back to Dev after UAT or PO Review",
+                        "value": 64.5,
+                        "timeseries": [
+                          63.4,
+                          66.1,
+                          65.9,
+                          67.3,
+                          64.0,
+                          64.4,
+                          66.1,
+                          67.4,
+                          66.2,
+                          66.2,
+                          64.5,
+                          62.6
+                        ]
+                      },
+                      {
+                        "metric_name": "Team self-assessment score of how often there's a misunderstanding / disagreement between Devs, testers & Business (PO/BA) regarding what a piece of work is supposed to deliver",
+                        "value": 14.2,
+                        "timeseries": [
+                          13.0,
+                          12.5,
+                          13.1,
+                          14.8,
+                          14.4,
+                          14.3,
+                          11.8,
+                          13.3,
+                          13.0,
+                          12.2,
+                          15.0,
+                          11.4
+                        ]
+                      }
+                    ],
+                    "data_source": "Jira; Self-assessment",
+                    "children": []
+                  },
+                  {
+                    "indicator": "The presensce of dedicated Quality Assurance experts in the team",
+                    "description": "In the situation where testers/QA specialists are not dedicated to the team and are instead shared between teams / or that there is some centralised 'testing team' that receives testing requests, we hypothesise that teams like that have a higher likelihood of escaped defects. The increased pressue on testing when less than 100% of a QA specialist's capacity is dedicated to the team could lead to less effort put into testing each individual piece of work, resulting in an increased likelihood of defects making their way to prod",
+                    "metrics": [
+                      {
+                        "metric_name": "# of teams the team's QA is contributing to",
+                        "value": 60.0,
+                        "timeseries": [
+                          60.0,
+                          59.4,
+                          62.5,
+                          59.1,
+                          62.4,
+                          58.8,
+                          61.7,
+                          62.9,
+                          60.7,
+                          60.5,
+                          62.3,
+                          60.2
+                        ]
+                      },
+                      {
+                        "metric_name": "% of the QA's capacity is dedicated to the team (from Jira)",
+                        "value": 13.1,
+                        "timeseries": [
+                          10.4,
+                          11.5,
+                          12.1,
+                          13.0,
+                          15.9,
+                          10.9,
+                          15.2,
+                          14.5,
+                          14.0,
+                          10.5,
+                          12.7,
+                          13.5
+                        ]
+                      },
+                      {
+                        "metric_name": "avg # of use cases per work item generated by part-time testers (compared to full-time testers, looking across multiple teams)",
+                        "value": 62.3,
+                        "timeseries": [
+                          62.2,
+                          64.6,
+                          62.3,
+                          65.0,
+                          61.3,
+                          65.1,
+                          59.8,
+                          61.7,
+                          64.0,
+                          63.7,
+                          60.6,
+                          63.7
+                        ]
+                      },
+                      {
+                        "metric_name": "% of bugs raised per work item by part-time testers",
+                        "value": 63.4,
+                        "timeseries": [
+                          60.4,
+                          65.7,
+                          62.7,
+                          64.7,
+                          62.2,
+                          62.8,
+                          61.0,
+                          62.1,
+                          63.4,
+                          60.7,
+                          66.3,
+                          62.2
+                        ]
+                      },
+                      {
+                        "metric_name": "% of fault feedback and bugs being rejected by Dev that were created by part-time testers",
+                        "value": 32.7,
+                        "timeseries": [
+                          34.7,
+                          29.8,
+                          33.6,
+                          31.6,
+                          35.0,
+                          34.0,
+                          35.4,
+                          35.5,
+                          33.5,
+                          30.3,
+                          35.3,
+                          33.8
+                        ]
+                      },
+                      {
+                        "metric_name": "Team self-assessment score of how much % is dedicated to each team or stream of work they support",
+                        "value": 39.3,
+                        "timeseries": [
+                          36.9,
+                          37.4,
+                          40.9,
+                          38.7,
+                          36.9,
+                          40.3,
+                          38.6,
+                          36.9,
+                          42.2,
+                          40.4,
+                          37.9,
+                          40.0
+                        ]
+                      }
+                    ],
+                    "data_source": "Jira; Zephyr; Self-assessment",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "indicator": "Volume of re-work",
+        "description": "Rework refers to having to do the same thing more than once due to some error when we did it the first time. Re-work contributes to the amount of work in the system because it adds 'new' work - the work we have to re-do - on top of the other work we committed to deliver ",
+        "metrics": [
+          {
+            "metric_name": "% of total rework volume to overall work volume -- total PR re-work volume + total bug/defect re-work volume + total re-work mandated by flow back from steps further down the value stream",
+            "value": 61.7,
+            "timeseries": [
+              61.0,
+              59.0,
+              58.7,
+              62.7,
+              61.6,
+              61.6,
+              63.8,
+              64.1,
+              59.0,
+              62.3,
+              60.1,
+              64.4
+            ]
+          }
+        ],
+        "data_source": "",
+        "children": [
+          {
+            "indicator": "Re-work driven by QA",
+            "description": "Just as quality affects WIP through the increase of escaped defects, quality can also affect WIP (perhaps more directly) by creating more failure demand. The poorer the quality, the more re-work is needed to fix defected features as they make their way downstream. We will explore the various leading indicators that affect the quality of the code that flows down to QA - the better the code quality, the lower the likelihood of needing re-work",
+            "metrics": [
+              {
+                "metric_name": "% of total bug/defect re-work volume to total re-work volume",
+                "value": 51.7,
+                "timeseries": [
+                  52.3,
+                  53.5,
+                  54.1,
+                  52.5,
+                  52.1,
+                  52.0,
+                  50.4,
+                  51.9,
+                  51.2,
+                  49.6,
+                  50.3,
+                  52.9
+                ]
+              }
+            ],
+            "data_source": "",
+            "children": [
+              {
+                "indicator": "Effectiveness of code reviews",
+                "description": "The extent and effectiveness of code reviews are leading indicators to quality - our hypothesis is that subpar code reviews will result in higher defects making their way to QA. Code with higher defect rate = more bugs discovered = more rework",
+                "metrics": [
+                  {
+                    "metric_name": "PR size (Avg. # of lines changed/files modified per PR)",
+                    "value": 76.5,
+                    "timeseries": [
+                      77.3,
+                      74.1,
+                      73.8,
+                      74.5,
+                      75.3,
+                      78.9,
+                      76.3,
+                      79.1,
+                      78.9,
+                      78.5,
+                      74.8,
+                      77.6
+                    ]
+                  },
+                  {
+                    "metric_name": "Avg time spent on code reviews",
+                    "value": 11.4,
+                    "timeseries": [
+                      9.9,
+                      11.2,
+                      13.8,
+                      13.5,
+                      13.5,
+                      9.6,
+                      9.9,
+                      14.0,
+                      9.7,
+                      11.0,
+                      9.4,
+                      11.6
+                    ]
+                  },
+                  {
+                    "metric_name": "Review depth (# of comments per PR)",
+                    "value": 36.1,
+                    "timeseries": [
+                      37.1,
+                      34.5,
+                      35.9,
+                      35.1,
+                      36.7,
+                      35.3,
+                      38.4,
+                      34.2,
+                      34.8,
+                      36.1,
+                      34.2,
+                      34.7
+                    ]
+                  },
+                  {
+                    "metric_name": "Avg. time between PR creation and first review",
+                    "value": 29.8,
+                    "timeseries": [
+                      30.0,
+                      32.4,
+                      26.8,
+                      31.1,
+                      27.7,
+                      30.8,
+                      28.6,
+                      30.4,
+                      31.2,
+                      26.8,
+                      27.2,
+                      31.0
+                    ]
+                  },
+                  {
+                    "metric_name": "Avg number of reviewers per PR",
+                    "value": 64.8,
+                    "timeseries": [
+                      62.1,
+                      66.2,
+                      66.2,
+                      65.5,
+                      64.8,
+                      66.3,
+                      63.8,
+                      62.5,
+                      62.6,
+                      63.9,
+                      65.2,
+                      66.7
+                    ]
+                  },
+                  {
+                    "metric_name": "Time to merge (avg. time from PR creation to merge)",
+                    "value": 41.0,
+                    "timeseries": [
+                      38.5,
+                      42.2,
+                      42.9,
+                      39.4,
+                      42.7,
+                      42.0,
+                      38.1,
+                      43.2,
+                      40.5,
+                      40.9,
+                      38.6,
+                      40.5
+                    ]
+                  },
+                  {
+                    "metric_name": "comment resolution time (Avg. ime to address review comments)",
+                    "value": 53.7,
+                    "timeseries": [
+                      55.2,
+                      56.0,
+                      52.1,
+                      55.5,
+                      52.8,
+                      54.4,
+                      55.8,
+                      51.8,
+                      54.8,
+                      53.5,
+                      50.9,
+                      54.8
+                    ]
+                  }
+                ],
+                "data_source": "Bitbucket",
+                "children": []
+              },
+              {
+                "indicator": "Work item size",
+                "description": "Larger work items are riskier, potentially leading to more quality issues (more bugs = more re-work). Also, the increased number of bugs increases the risk of some of them escaping QA, leading to more expensive re-work",
+                "metrics": [
+                  {
+                    "metric_name": "% of work items that clear Dev in the same sprint they were started in",
+                    "value": 56.2,
+                    "timeseries": [
+                      58.8,
+                      55.9,
+                      59.1,
+                      56.6,
+                      56.7,
+                      56.1,
+                      56.4,
+                      55.1,
+                      58.2,
+                      58.2,
+                      57.5,
+                      59.2
+                    ]
+                  },
+                  {
+                    "metric_name": "Total Dev Touch Time",
+                    "value": 14.9,
+                    "timeseries": [
+                      17.4,
+                      12.3,
+                      12.3,
+                      17.2,
+                      12.6,
+                      13.6,
+                      16.4,
+                      13.6,
+                      12.5,
+                      14.6,
+                      14.7,
+                      13.3
+                    ]
+                  },
+                  {
+                    "metric_name": "Standard deviation of how long in Dev work items of the same estimate take",
+                    "value": 52.6,
+                    "timeseries": [
+                      54.8,
+                      52.4,
+                      50.1,
+                      51.7,
+                      54.9,
+                      54.4,
+                      52.0,
+                      52.0,
+                      55.5,
+                      51.1,
+                      55.2,
+                      53.9
+                    ]
+                  },
+                  {
+                    "metric_name": "what percentile is this team/ToT in, in terms of how long on average a piece of work takes",
+                    "value": 53.7,
+                    "timeseries": [
+                      56.0,
+                      53.6,
+                      55.3,
+                      55.0,
+                      55.2,
+                      51.5,
+                      53.3,
+                      53.6,
+                      52.8,
+                      55.4,
+                      56.2,
+                      52.8
+                    ]
+                  },
+                  {
+                    "metric_name": "avg number of sprints a piece of work is carried over before it clear development",
+                    "value": 14.9,
+                    "timeseries": [
+                      13.8,
+                      12.3,
+                      16.7,
+                      14.8,
+                      12.7,
+                      12.5,
+                      17.4,
+                      14.2,
+                      16.7,
+                      13.9,
+                      14.4,
+                      17.7
+                    ]
+                  }
+                ],
+                "data_source": "Jira",
+                "children": []
+              },
+              {
+                "indicator": "Unit test coverage",
+                "description": "Lower test coverage increases the risk of latent bugs that are either identified at QA (which causes QA-driven failure demand & subsequent re-work), or (worse) escape QA and make their way to prod",
+                "metrics": [
+                  {
+                    "metric_name": "% of code covered by unit tests",
+                    "value": 20.1,
+                    "timeseries": [
+                      18.0,
+                      18.3,
+                      20.8,
+                      18.6,
+                      21.9,
+                      20.1,
+                      23.0,
+                      23.1,
+                      22.6,
+                      22.0,
+                      19.0,
+                      20.1
+                    ]
+                  },
+                  {
+                    "metric_name": "Test coverage change (change in test coverage % per PR)",
+                    "value": 12.6,
+                    "timeseries": [
+                      15.2,
+                      13.3,
+                      10.0,
+                      10.7,
+                      13.0,
+                      9.8,
+                      10.0,
+                      10.3,
+                      11.2,
+                      15.0,
+                      15.5,
+                      12.2
+                    ]
+                  }
+                ],
+                "data_source": "Bitbucket",
+                "children": []
+              },
+              {
+                "indicator": "Code complexity",
+                "description": "we hypothesise that  complexity, measured through cyclomatic complexity (CC), is a good leading indicator to quality. The more complex the code, the higher the likelihood of breaking something while trying to integrate something new AND the likelihood of not fixing a problem as intended, leading to more bugs and more re-work",
+                "metrics": [
+                  {
+                    "metric_name": "Code Complexity (1-5 low, 6-10 moderate, 11-20 high, 21+ very high)",
+                    "value": 49.4,
+                    "timeseries": [
+                      49.5,
+                      50.8,
+                      47.1,
+                      49.5,
+                      48.9,
+                      48.9,
+                      50.1,
+                      51.5,
+                      47.0,
+                      49.1,
+                      47.8,
+                      50.4
+                    ]
+                  },
+                  {
+                    "metric_name": "Maintainability Index (<10 difficult to maintain",
+                    "value": 47.1,
+                    "timeseries": [
+                      50.0,
+                      46.5,
+                      44.2,
+                      45.1,
+                      46.9,
+                      47.4,
+                      44.4,
+                      49.8,
+                      46.2,
+                      46.7,
+                      44.3,
+                      46.6
+                    ]
+                  },
+                  {
+                    "metric_name": "between 10-20 moderately maintainable",
+                    "value": 41.6,
+                    "timeseries": [
+                      42.7,
+                      41.8,
+                      42.2,
+                      43.0,
+                      41.8,
+                      43.7,
+                      44.5,
+                      43.9,
+                      43.1,
+                      42.0,
+                      39.6,
+                      42.9
+                    ]
+                  },
+                  {
+                    "metric_name": ">20 highly maintainable)",
+                    "value": 20.3,
+                    "timeseries": [
+                      20.7,
+                      21.3,
+                      21.2,
+                      17.6,
+                      22.4,
+                      17.3,
+                      18.0,
+                      21.5,
+                      21.3,
+                      21.8,
+                      22.0,
+                      20.8
+                    ]
+                  }
+                ],
+                "data_source": "Bitbucket",
+                "children": []
+              },
+              {
+                "indicator": "Dependencies",
+                "description": "Looking both at code and architectural dependencies - the hypothesis is that dependencies not only slow down development and testing, but also that the more complex our dependencies are, the higher the likelihood of introducing bugs (higher risk of inadvertently breaking something). The higher the likelihood of introducing bugs, the higher the likelihood of generating re-work",
+                "metrics": [
+                  {
+                    "metric_name": "Code dependency index",
+                    "value": 67.6,
+                    "timeseries": [
+                      67.3,
+                      67.1,
+                      70.1,
+                      66.6,
+                      64.9,
+                      68.7,
+                      67.9,
+                      67.4,
+                      68.4,
+                      66.2,
+                      68.5,
+                      69.8
+                    ]
+                  },
+                  {
+                    "metric_name": "Architectural dependency index",
+                    "value": 73.3,
+                    "timeseries": [
+                      73.0,
+                      71.9,
+                      73.9,
+                      71.8,
+                      71.9,
+                      76.0,
+                      71.8,
+                      74.9,
+                      73.4,
+                      76.2,
+                      71.3,
+                      74.9
+                    ]
+                  }
+                ],
+                "data_source": "Bitbucket",
+                "children": []
+              },
+              {
+                "indicator": "Our ability to learn from mistakes",
+                "description": "If the same bugs keep appearing again and again, then this is a symptom of our inability to incorporate learnings/lessons into improving how we develop - which could be indicative of other issues impeding our ability to embed quality into development - e.g. communication between dev & QA, dev & QA experience/craft mastery, unfamiliarity with the code base, etc.",
+                "metrics": [
+                  {
+                    "metric_name": "% of recurring bugs (that is, bugs that are raised in timebox n that are similar to bugs that were previously raised in past timeboxes)",
+                    "value": 63.1,
+                    "timeseries": [
+                      62.6,
+                      65.6,
+                      62.7,
+                      65.0,
+                      62.5,
+                      65.4,
+                      63.6,
+                      64.4,
+                      60.5,
+                      66.0,
+                      61.1,
+                      60.6
+                    ]
+                  }
+                ],
+                "data_source": "Jira",
+                "children": []
+              },
+              {
+                "indicator": "Clarity of understanding regarding what value the work item is supposed to deliver",
+                "description": "If there's no shared understanding regarding what the work item is supposed to deliver, then it's inevitable that bugs will be raised, potentially leading to re-work",
+                "metrics": [
+                  {
+                    "metric_name": "Avg # of times work item bounces between QA & Dev before moving forward",
+                    "value": 68.9,
+                    "timeseries": [
+                      69.7,
+                      71.8,
+                      66.9,
+                      71.2,
+                      66.9,
+                      70.7,
+                      69.0,
+                      68.0,
+                      70.2,
+                      71.8,
+                      66.3,
+                      68.9
+                    ]
+                  },
+                  {
+                    "metric_name": "Avg # of times dev rejects bug",
+                    "value": 56.7,
+                    "timeseries": [
+                      53.8,
+                      56.7,
+                      58.3,
+                      57.3,
+                      55.3,
+                      57.8,
+                      55.8,
+                      57.0,
+                      54.8,
+                      59.0,
+                      56.5,
+                      54.5
+                    ]
+                  },
+                  {
+                    "metric_name": "% of work items where 'comment sentiment' indicates lack of shared understanding of what work item should deliver",
+                    "value": 19.8,
+                    "timeseries": [
+                      19.6,
+                      19.4,
+                      17.2,
+                      21.9,
+                      22.6,
+                      18.0,
+                      19.9,
+                      21.9,
+                      18.6,
+                      21.4,
+                      18.7,
+                      19.1
+                    ]
+                  },
+                  {
+                    "metric_name": "% of work items where changes (added ACs, changes in description, estimate, splitting work item) happen after work item has moved to In Progress",
+                    "value": 31.6,
+                    "timeseries": [
+                      32.8,
+                      34.1,
+                      31.3,
+                      33.0,
+                      32.3,
+                      31.0,
+                      29.7,
+                      33.5,
+                      33.5,
+                      29.6,
+                      32.6,
+                      31.4
+                    ]
+                  },
+                  {
+                    "metric_name": "% of work items where changes (added ACs, changes in description, estimate, splitting work item) happen after work item has moved to In QA",
+                    "value": 29.4,
+                    "timeseries": [
+                      31.7,
+                      29.4,
+                      27.9,
+                      29.0,
+                      27.8,
+                      29.6,
+                      31.0,
+                      29.9,
+                      28.8,
+                      26.4,
+                      29.4,
+                      27.5
+                    ]
+                  },
+                  {
+                    "metric_name": "% of work items that go back to Dev after UAT or PO Review",
+                    "value": 28.5,
+                    "timeseries": [
+                      30.6,
+                      31.1,
+                      30.0,
+                      30.2,
+                      27.0,
+                      28.2,
+                      30.6,
+                      28.5,
+                      26.2,
+                      25.7,
+                      27.1,
+                      27.5
+                    ]
+                  },
+                  {
+                    "metric_name": "Team self-assessment score of how often there's a misunderstanding / disagreement between Devs, testers & Business (PO/BA) regarding what a piece of work is supposed to deliver",
+                    "value": 66.4,
+                    "timeseries": [
+                      68.6,
+                      66.6,
+                      69.0,
+                      64.0,
+                      65.6,
+                      63.8,
+                      65.1,
+                      67.3,
+                      65.5,
+                      67.9,
+                      63.4,
+                      67.0
+                    ]
+                  }
+                ],
+                "data_source": "Jira; Self-assessment",
+                "children": []
+              },
+              {
+                "indicator": "Clarity and consistent application of entry and exit criteria",
+                "description": "Having clear, shared & agreed-upon dev exit criteria / testing entry criteria will ensure consistent quality, reducing the number of bugs found (and therefore reducing re-work)",
+                "metrics": [
+                  {
+                    "metric_name": "% of trivial / low level bugs",
+                    "value": 42.9,
+                    "timeseries": [
+                      43.2,
+                      40.8,
+                      44.5,
+                      42.1,
+                      43.2,
+                      40.8,
+                      45.9,
+                      44.4,
+                      42.1,
+                      43.6,
+                      44.7,
+                      43.1
+                    ]
+                  },
+                  {
+                    "metric_name": "% of recurring bugs",
+                    "value": 13.3,
+                    "timeseries": [
+                      11.1,
+                      11.0,
+                      13.4,
+                      13.9,
+                      13.2,
+                      15.7,
+                      13.2,
+                      16.2,
+                      16.2,
+                      15.2,
+                      11.6,
+                      14.9
+                    ]
+                  },
+                  {
+                    "metric_name": "variance in code-review metrics for different devs (PR size (Avg. # of lines changed/files modified per PR)",
+                    "value": 28.0,
+                    "timeseries": [
+                      29.8,
+                      27.6,
+                      27.5,
+                      30.4,
+                      30.1,
+                      29.6,
+                      25.3,
+                      28.6,
+                      30.6,
+                      30.1,
+                      28.1,
+                      30.4
+                    ]
+                  },
+                  {
+                    "metric_name": "Avg time spent on code reviews",
+                    "value": 11.1,
+                    "timeseries": [
+                      9.4,
+                      8.9,
+                      10.7,
+                      13.9,
+                      8.9,
+                      10.1,
+                      12.6,
+                      9.4,
+                      10.1,
+                      12.6,
+                      8.2,
+                      10.2
+                    ]
+                  },
+                  {
+                    "metric_name": "Review depth (# of comments per PR)",
+                    "value": 70.7,
+                    "timeseries": [
+                      72.7,
+                      67.7,
+                      70.8,
+                      68.7,
+                      71.7,
+                      69.6,
+                      70.9,
+                      72.4,
+                      70.0,
+                      71.8,
+                      68.1,
+                      71.5
+                    ]
+                  },
+                  {
+                    "metric_name": "Avg. time between PR creation and first review",
+                    "value": 20.5,
+                    "timeseries": [
+                      22.4,
+                      21.2,
+                      19.3,
+                      19.0,
+                      20.7,
+                      19.4,
+                      18.2,
+                      23.2,
+                      22.7,
+                      20.4,
+                      19.8,
+                      20.7
+                    ]
+                  },
+                  {
+                    "metric_name": "Avg number of reviewers per PR",
+                    "value": 63.6,
+                    "timeseries": [
+                      64.2,
+                      66.0,
+                      64.1,
+                      63.8,
+                      65.9,
+                      66.2,
+                      64.5,
+                      61.2,
+                      64.1,
+                      62.4,
+                      62.7,
+                      63.8
+                    ]
+                  },
+                  {
+                    "metric_name": "Time to merge (avg. time from PR creation to merge)",
+                    "value": 32.0,
+                    "timeseries": [
+                      31.5,
+                      31.7,
+                      33.6,
+                      31.2,
+                      32.7,
+                      32.1,
+                      32.3,
+                      34.8,
+                      33.5,
+                      32.9,
+                      30.7,
+                      29.2
+                    ]
+                  },
+                  {
+                    "metric_name": "comment resolution time (Avg. ime to address review comments))",
+                    "value": 58.6,
+                    "timeseries": [
+                      57.4,
+                      56.8,
+                      57.0,
+                      57.3,
+                      56.6,
+                      59.5,
+                      60.4,
+                      55.8,
+                      61.5,
+                      59.5,
+                      56.7,
+                      60.9
+                    ]
+                  },
+                  {
+                    "metric_name": "Variance in unit test coverage",
+                    "value": 13.0,
+                    "timeseries": [
+                      13.2,
+                      13.4,
+                      12.4,
+                      16.0,
+                      13.0,
+                      13.2,
+                      10.4,
+                      11.3,
+                      14.5,
+                      16.0,
+                      15.5,
+                      11.4
+                    ]
+                  },
+                  {
+                    "metric_name": "Team (QA specialists) self-assessment score of the % of bugs raised that they believe should've been screened at Dev and never made it to testing",
+                    "value": 65.3,
+                    "timeseries": [
+                      66.4,
+                      66.8,
+                      63.1,
+                      62.4,
+                      63.8,
+                      66.3,
+                      65.7,
+                      63.2,
+                      67.0,
+                      65.9,
+                      63.4,
+                      62.6
+                    ]
+                  }
+                ],
+                "data_source": "Jira; Bitbucket; Self-assessment",
+                "children": []
+              }
+            ]
+          },
+          {
+            "indicator": "Re-work driven by further downstream steps",
+            "description": "This refers to all re-work triggered from steps downstream of QA - that would include UAT/PO review, and further downstream steps (potentially outside the control of the team) incl. any integration/regression testing and all work needed to release a piece of work to production",
+            "metrics": [
+              {
+                "metric_name": "% of total re-work triggered by steps further down of QA",
+                "value": 12.7,
+                "timeseries": [
+                  11.5,
+                  15.6,
+                  14.0,
+                  15.6,
+                  10.9,
+                  11.2,
+                  12.1,
+                  13.3,
+                  11.7,
+                  15.6,
+                  15.7,
+                  10.3
+                ]
+              },
+              {
+                "metric_name": "[includes (a) how long re-opened work items took from moment of re-open to moving to Done again",
+                "value": 62.9,
+                "timeseries": [
+                  63.6,
+                  65.4,
+                  60.9,
+                  65.4,
+                  61.7,
+                  62.2,
+                  63.1,
+                  61.9,
+                  65.1,
+                  62.7,
+                  60.2,
+                  61.4
+                ]
+              },
+              {
+                "metric_name": "(b) issues added to a piece of work that was marked as done/resolved - in this case, calculate the total cycle time of these issues as total re-work time",
+                "value": 47.5,
+                "timeseries": [
+                  50.1,
+                  44.9,
+                  46.3,
+                  45.2,
+                  50.5,
+                  47.7,
+                  46.1,
+                  50.2,
+                  48.1,
+                  47.8,
+                  46.1,
+                  45.4
+                ]
+              },
+              {
+                "metric_name": "(c) use labels e.g. integration-issue to denote re-work, calculate total cycle time of this work as pure re-work",
+                "value": 57.8,
+                "timeseries": [
+                  58.6,
+                  55.8,
+                  59.5,
+                  54.9,
+                  57.0,
+                  57.9,
+                  56.9,
+                  60.1,
+                  60.7,
+                  59.9,
+                  57.1,
+                  59.1
+                ]
+              },
+              {
+                "metric_name": "(d) as with QA-driven re-work, if a piece of work returns to In Dev, calculate the total time it takes again until the after the step it stopped at as re-work",
+                "value": 22.6,
+                "timeseries": [
+                  20.2,
+                  20.6,
+                  22.2,
+                  25.0,
+                  20.7,
+                  21.5,
+                  24.0,
+                  22.0,
+                  24.4,
+                  22.3,
+                  23.7,
+                  22.9
+                ]
+              },
+              {
+                "metric_name": "(e) use sentiment analysis to analyse features and work items to determine if they were due to re-work initiatied further downstream. If a work item was identified as such, calculate the time it takes as re-work time]",
+                "value": 15.1,
+                "timeseries": [
+                  14.6,
+                  14.3,
+                  15.7,
+                  17.9,
+                  14.6,
+                  15.3,
+                  16.4,
+                  13.8,
+                  17.0,
+                  14.4,
+                  17.0,
+                  12.9
+                ]
+              }
+            ],
+            "data_source": "Jira",
+            "children": [
+              {
+                "indicator": "Clarity about the entry criteria of downstream steps",
+                "description": "When it's not clear what is needed to be present to enable effective downstream processing, the likelihood of additional work to be undertaken is higher (first re-work to get the work to a state ready for downstream work/review/processing, then re-work resulting from that review)",
+                "metrics": [
+                  {
+                    "metric_name": "% of trivial / low level defects from downstream steps raised",
+                    "value": 33.2,
+                    "timeseries": [
+                      33.6,
+                      33.7,
+                      30.9,
+                      33.9,
+                      35.8,
+                      34.7,
+                      35.7,
+                      30.8,
+                      33.6,
+                      31.7,
+                      36.0,
+                      34.2
+                    ]
+                  },
+                  {
+                    "metric_name": "% of recurring defects",
+                    "value": 49.0,
+                    "timeseries": [
+                      50.6,
+                      49.7,
+                      46.6,
+                      51.9,
+                      50.7,
+                      47.5,
+                      48.8,
+                      48.4,
+                      50.6,
+                      46.2,
+                      49.3,
+                      50.1
+                    ]
+                  },
+                  {
+                    "metric_name": "% of substantial defects raised",
+                    "value": 52.0,
+                    "timeseries": [
+                      51.4,
+                      50.3,
+                      54.2,
+                      53.4,
+                      53.1,
+                      53.9,
+                      50.1,
+                      53.4,
+                      54.2,
+                      51.9,
+                      54.3,
+                      50.1
+                    ]
+                  },
+                  {
+                    "metric_name": "Variance per work item size for how long it takes to get a work item to the downstream step",
+                    "value": 39.1,
+                    "timeseries": [
+                      41.8,
+                      40.0,
+                      41.3,
+                      38.0,
+                      37.4,
+                      40.2,
+                      41.4,
+                      41.0,
+                      40.7,
+                      40.7,
+                      39.3,
+                      42.1
+                    ]
+                  },
+                  {
+                    "metric_name": "Team self-assessment score of how confident they are that they know what the downstream steps are looking for and have the tools/guidelines to embed it",
+                    "value": 56.6,
+                    "timeseries": [
+                      54.3,
+                      53.9,
+                      57.9,
+                      57.2,
+                      55.1,
+                      56.0,
+                      58.7,
+                      57.2,
+                      56.9,
+                      59.0,
+                      56.5,
+                      55.5
+                    ]
+                  }
+                ],
+                "data_source": "Self-assessment",
+                "children": []
+              },
+              {
+                "indicator": "Promptness in engaging downstream steps early in our development efforts",
+                "description": "Engaging downstream steps early lowers the likelihood of costly discovery of defects later downstream - shift left",
+                "metrics": [
+                  {
+                    "metric_name": "the existence of NFRs incl. security requirements in the Acceptance Criteria of the work item or as part of its description/documentation",
+                    "value": 21.6,
+                    "timeseries": [
+                      23.4,
+                      23.3,
+                      23.8,
+                      22.4,
+                      19.7,
+                      19.5,
+                      23.5,
+                      24.6,
+                      21.2,
+                      23.7,
+                      19.4,
+                      21.4
+                    ]
+                  },
+                  {
+                    "metric_name": "Team self-assessment score of how early we engage those stages in our planning",
+                    "value": 15.8,
+                    "timeseries": [
+                      15.1,
+                      16.6,
+                      16.7,
+                      15.7,
+                      17.3,
+                      17.7,
+                      12.9,
+                      13.9,
+                      16.9,
+                      13.9,
+                      15.0,
+                      13.9
+                    ]
+                  }
+                ],
+                "data_source": "Self-assessment",
+                "children": []
+              },
+              {
+                "indicator": "Continuation of engagement with downstream steps throughout early planning & upstream steps",
+                "description": "To reduce the likelihood of downstream steps discovering major defects in the work, the team should be proactive in engaging downstream (compliance) every time a major pivot takes place (not only early on) ",
+                "metrics": [
+                  {
+                    "metric_name": "the % of work items where there's a mention of further downstream steps (in sub-tasks within work items",
+                    "value": 58.0,
+                    "timeseries": [
+                      56.3,
+                      60.5,
+                      55.7,
+                      57.2,
+                      60.9,
+                      55.2,
+                      59.7,
+                      58.6,
+                      60.9,
+                      55.9,
+                      56.0,
+                      55.5
+                    ]
+                  },
+                  {
+                    "metric_name": "in comments",
+                    "value": 47.6,
+                    "timeseries": [
+                      46.7,
+                      46.2,
+                      49.3,
+                      48.4,
+                      46.4,
+                      49.8,
+                      47.1,
+                      45.5,
+                      47.4,
+                      49.5,
+                      46.2,
+                      49.0
+                    ]
+                  },
+                  {
+                    "metric_name": "in new work items added to capture feedback/re-work from downstream steps before the work item is moved downstream)",
+                    "value": 79.5,
+                    "timeseries": [
+                      82.0,
+                      76.7,
+                      79.6,
+                      81.7,
+                      80.6,
+                      78.4,
+                      82.0,
+                      80.7,
+                      79.9,
+                      79.4,
+                      80.5,
+                      78.7
+                    ]
+                  },
+                  {
+                    "metric_name": "Team self-assessment score of how strongly they agree with the sentiment that these downstream (mostly compliance) steps are continuously engaged so that changes/pivots are assessed and feedback given quickly",
+                    "value": 22.4,
+                    "timeseries": [
+                      19.5,
+                      22.1,
+                      23.2,
+                      22.2,
+                      21.8,
+                      20.1,
+                      23.8,
+                      20.8,
+                      21.4,
+                      24.7,
+                      25.0,
+                      22.8
+                    ]
+                  }
+                ],
+                "data_source": "Jira; Self-assessment",
+                "children": []
+              },
+              {
+                "indicator": "Availability of downstream steps to be engaged in early and continuous planning",
+                "description": "It's not just about 'our' willingness  to engage downstream steps - a key element here is also whether those downstream steps are available to be engaged promptly and how effective they are in communicating their entry criteria",
+                "metrics": [
+                  {
+                    "metric_name": "Avg. duration from sending work item to downstream steps to getting feedback/response",
+                    "value": 19.5,
+                    "timeseries": [
+                      21.3,
+                      21.7,
+                      20.3,
+                      22.5,
+                      22.3,
+                      17.1,
+                      17.9,
+                      21.4,
+                      19.5,
+                      18.5,
+                      17.3,
+                      19.7
+                    ]
+                  },
+                  {
+                    "metric_name": "Variance in how long it takes from sending work item to downstream step to getting feedback/response",
+                    "value": 41.2,
+                    "timeseries": [
+                      40.2,
+                      41.8,
+                      40.2,
+                      38.3,
+                      42.9,
+                      44.1,
+                      42.2,
+                      40.6,
+                      42.7,
+                      41.4,
+                      41.2,
+                      38.9
+                    ]
+                  },
+                  {
+                    "metric_name": "Avg. overall duration of all the wait times at downstream step until work moves beyond it",
+                    "value": 36.3,
+                    "timeseries": [
+                      38.3,
+                      38.8,
+                      37.4,
+                      34.1,
+                      38.3,
+                      34.2,
+                      33.8,
+                      38.0,
+                      38.5,
+                      35.8,
+                      35.9,
+                      35.2
+                    ]
+                  },
+                  {
+                    "metric_name": "Variance in Avg. overall duration of all the wait times at downstream step until work moves beyond it",
+                    "value": 60.6,
+                    "timeseries": [
+                      58.8,
+                      57.6,
+                      59.2,
+                      57.8,
+                      60.9,
+                      62.6,
+                      61.2,
+                      63.4,
+                      60.9,
+                      58.1,
+                      62.0,
+                      57.8
+                    ]
+                  },
+                  {
+                    "metric_name": "Team self-assessment score of how easy it is to get downstream steps (e.g. various compliance teams) engaged and promptness of their responses",
+                    "value": 60.3,
+                    "timeseries": [
+                      61.9,
+                      57.5,
+                      60.1,
+                      60.7,
+                      60.9,
+                      59.0,
+                      61.4,
+                      60.7,
+                      57.7,
+                      61.9,
+                      57.6,
+                      62.5
+                    ]
+                  }
+                ],
+                "data_source": "Jira; Self-assessment",
+                "children": []
+              },
+              {
+                "indicator": "Clarity of feedback provided by downstream step re what needs to be fixed",
+                "description": "Lack of key info as part of the feedback increases the likelihood of more back-and-forth between up and down-stream steps, increasing re-work",
+                "metrics": [
+                  {
+                    "metric_name": "Variance of how long it takes to resolve re-work raised (counted from moment re-work item was put in Progress all the way to Done)",
+                    "value": 61.7,
+                    "timeseries": [
+                      60.4,
+                      60.7,
+                      62.8,
+                      64.3,
+                      60.5,
+                      59.2,
+                      60.5,
+                      62.6,
+                      59.2,
+                      60.3,
+                      62.1,
+                      61.4
+                    ]
+                  },
+                  {
+                    "metric_name": "Avg # of times a downstream defect goes back and forth before resolved",
+                    "value": 71.8,
+                    "timeseries": [
+                      70.3,
+                      72.4,
+                      72.1,
+                      72.0,
+                      70.4,
+                      73.4,
+                      71.6,
+                      70.7,
+                      68.9,
+                      72.4,
+                      72.0,
+                      69.5
+                    ]
+                  }
+                ],
+                "data_source": "Jira",
+                "children": []
+              },
+              {
+                "indicator": "Effectiveness of our triage process to determine what to fix now vs wait",
+                "description": "Not every request we receive is critical enough be addressed immediately at the risk of disrupting the timebox. An effective triage process would ensure that we have systemic checks we perform to ascertain the criticality of the request we're receiving",
+                "metrics": [
+                  {
+                    "metric_name": "Avg % of downstream defect demand requests that were added to the 'product' backlog vs. the 'sprint' backlog",
+                    "value": 28.5,
+                    "timeseries": [
+                      27.2,
+                      29.5,
+                      26.0,
+                      31.1,
+                      27.5,
+                      28.2,
+                      30.7,
+                      31.2,
+                      28.2,
+                      28.5,
+                      31.1,
+                      30.3
+                    ]
+                  },
+                  {
+                    "metric_name": "Team self-assessment score of how effective the team thinks their downstream defect triage process is (in ensuring they only work on the most critical stuff)",
+                    "value": 24.6,
+                    "timeseries": [
+                      23.0,
+                      21.7,
+                      23.1,
+                      22.4,
+                      25.8,
+                      25.6,
+                      25.0,
+                      24.7,
+                      26.3,
+                      25.2,
+                      25.1,
+                      24.9
+                    ]
+                  }
+                ],
+                "data_source": "Jira; Self-assessment",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
