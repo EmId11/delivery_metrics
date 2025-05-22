@@ -4,43 +4,69 @@ import json
 from pathlib import Path
 import plotly.graph_objs as go
 
-# ───────────────────────────────────────────────────────────────────────────────
+# ╭──────────────────────────────────────────────────────────────────────────╮
 #  CONFIG
-# ───────────────────────────────────────────────────────────────────────────────
-DATA_PATH = (
-    Path(__file__).parent.parent / "delivery_health_tree_scenario.json"
-)  # adjust if your JSON has a different name
+# ╰──────────────────────────────────────────────────────────────────────────╯
+DATA_PATH = Path(__file__).parent.parent / "delivery_health_tree_scenario.json"
+DEFAULTS = {
+    "wip":               ["work in progress", "wip"],
+    "cycle_time":        ["cycle time", "age of unfinished"],
+    "carry_over":        ["carry-over", "departure is less"],
+    "interrupts":        ["interrupt", "bau"],
+    "estimation":        ["estimation effectiveness", "estimation consistency"],
+}
 
 st.set_page_config(page_title="What Happened – Delivery Health Model", layout="wide")
 
-# ───────────────────────────────────────────────────────────────────────────────
-#  Helpers
-# ───────────────────────────────────────────────────────────────────────────────
+# ╭──────────────────────────────────────────────────────────────────────────╮
+#  Load tree
+# ╰──────────────────────────────────────────────────────────────────────────╯
 @st.cache_data
 def load_tree(path):
     with open(path) as f:
         return json.load(f)
 
-def find_metric(tree, keyword: str):
-    """Return first metric whose name contains keyword (case-insensitive)."""
-    for node in tree:
-        stack = [node]
-        while stack:
-            n = stack.pop()
-            for m in n.get("metrics", []):
-                if keyword.lower() in m["metric_name"].lower():
-                    return m
-            stack.extend(n.get("children", []))
+if not DATA_PATH.exists():
+    st.error(f"❌ JSON not found at {DATA_PATH}. Put the file at repo root.")
+    st.stop()
+
+tree = load_tree(DATA_PATH)
+
+# ╭──────────────────────────────────────────────────────────────────────────╮
+#  Flatten all metrics so user can pick interactively
+# ╰──────────────────────────────────────────────────────────────────────────╯
+def walk_metrics(nodes):
+    for n in nodes:
+        for m in n.get("metrics", []):
+            yield m
+        yield from walk_metrics(n.get("children", []))
+
+all_metrics = list(walk_metrics(tree))
+metric_names = [m["metric_name"] for m in all_metrics]
+
+def find_by_keywords(keywords):
+    for kw in keywords:
+        for m in all_metrics:
+            if kw.lower() in m["metric_name"].lower():
+                return m
     return None
 
-def grab(tree, hint):
-    """Gracefully try to pull a metric; warn if not found."""
-    m = find_metric(tree, hint)
-    if m is None:
-        st.warning(f"Metric containing **{hint}** not found in JSON.")
-    return m
+# Sidebar pickers (default to keyword match, else first metric)
+st.sidebar.title("📊 Choose metrics for the narrative")
+selected_metrics = {}
+for key, words in DEFAULTS.items():
+    default_metric = find_by_keywords(words) or all_metrics[0]
+    sel = st.sidebar.selectbox(
+        f"{key.replace('_',' ').title()} metric",
+        metric_names,
+        index=metric_names.index(default_metric["metric_name"]),
+    )
+    selected_metrics[key] = next(m for m in all_metrics if m["metric_name"] == sel)
 
-def simple_chart(metric, colour="#009688"):
+# ╭──────────────────────────────────────────────────────────────────────────╮
+#  Chart helper
+# ╰──────────────────────────────────────────────────────────────────────────╯
+def chart(metric, colour="#009688"):
     fig = go.Figure()
     fig.add_trace(
         go.Scatter(
@@ -59,8 +85,8 @@ def simple_chart(metric, colour="#009688"):
                 y=[metric["target"]] * len(metric["timeseries"]),
                 mode="lines",
                 line=dict(width=2, dash="dash", color="#ffa726"),
-                hoverinfo="skip",
                 showlegend=False,
+                hoverinfo="skip",
             )
         )
     fig.update_layout(
@@ -73,88 +99,54 @@ def simple_chart(metric, colour="#009688"):
     )
     st.plotly_chart(fig, use_container_width=True)
 
-# ───────────────────────────────────────────────────────────────────────────────
-#  Load data
-# ───────────────────────────────────────────────────────────────────────────────
-if not DATA_PATH.exists():
-    st.error(f"❌ JSON data file not found at {DATA_PATH.resolve()}")
-    st.stop()
-
-tree = load_tree(DATA_PATH)
-
-# ───────────────────────────────────────────────────────────────────────────────
-#  Pull narrative-driver metrics
-# ───────────────────────────────────────────────────────────────────────────────
-wip         = grab(tree, "total volume of work in progress")
-cycle_time  = grab(tree, "cycle time") or grab(tree, "age of unfinished work")
-carry_over  = grab(tree, "carry-over")  or grab(tree, "departure is less")
-interrupts  = grab(tree, "interrupt")   or grab(tree, "BAU")
-estimation  = grab(tree, "estimation effectiveness") or grab(tree, "estimation consistency")
-
-key_metrics = dict(
-    wip=wip, cycle_time=cycle_time, carry_over=carry_over,
-    interrupts=interrupts, estimation=estimation
-)
-missing = [k for k, m in key_metrics.items() if m is None]
-if missing:
-    st.error(f"Page cannot render – these key metrics are missing: {', '.join(missing)}")
-    st.stop()
-
-# ───────────────────────────────────────────────────────────────────────────────
-#  UI – Narrative
-# ───────────────────────────────────────────────────────────────────────────────
+# ╭──────────────────────────────────────────────────────────────────────────╮
+#  Narrative Page
+# ╰──────────────────────────────────────────────────────────────────────────╯
 st.title("📖 What Happened – Narrative View")
 
 st.markdown("""
 ### 1. Executive summary
-Over a 12-sprint window, **Squad Zeta** shifted from a healthy, flow-based team
-to one trapped in a classic **high-WIP → long cycle-time** loop:
-
-* WIP limits were relaxed → total WIP ↑ **75 %**  
-* Two senior devs left → effective capacity ↓, estimation discipline slipped  
-* External API upgrade introduced blockers; region launch drove BAU interrupts  
-* Result: cycle-time more than doubled, predictability band widened from ±12 % to ±38 %
+Over a 12-sprint window the team drifted from controlled flow to a reinforcing
+loop of **high WIP → long cycle-time → carry-over → even higher WIP**.
 """)
 
-# ── big charts
+# big charts
 c1, c2 = st.columns(2)
 with c1:
     st.subheader("Total WIP")
-    simple_chart(wip)
+    chart(selected_metrics["wip"])
 with c2:
     st.subheader("Cycle-time (days)")
-    simple_chart(cycle_time)
+    chart(selected_metrics["cycle_time"])
 
 c3, c4 = st.columns(2)
 with c3:
-    st.subheader("% Carry-over (work not finished in sprint)")
-    simple_chart(carry_over, colour="#c62828")
+    st.subheader("% Carry-over")
+    chart(selected_metrics["carry_over"], colour="#c62828")
 with c4:
     st.subheader("BAU Interrupt share")
-    simple_chart(interrupts, colour="#6a1b9a")
+    chart(selected_metrics["interrupts"], colour="#6a1b9a")
 
 st.subheader("Estimation effectiveness score")
-simple_chart(estimation, colour="#0277bd")
+chart(selected_metrics["estimation"], colour="#0277bd")
 
 st.markdown("""
-### 2. Trigger-effect timeline
-
+### 2. Trigger timeline
 | Sprint | Trigger | Immediate effect | Down-stream impact |
 |--------|---------|------------------|--------------------|
-| **3** | WIP cap lifted | WIP +20 items | Age of work climbs |
-| **4** | Two seniors reassigned | Velocity –15 % | Estimation consistency dips |
-| **5** | Platform API upgrade | Items blocked | Blocked-days ×4 |
-| **6** | Region launch (support) | Interrupt items spike | Context-switching ↑ |
-| **7-8** | PO splits micro-tickets | Ticket count +60 % | Large items stall |
-| **9-12** | Deadline panic | WIP peaks ~80 | Cycle-time tops 22 d |
+| 3 | WIP cap lifted | WIP +20 | Work age rises |
+| 4 | Two seniors leave | Velocity –15 % | Estimation slippage |
+| 5 | API upgrade needed | Items blocked | Blocker-days ×4 |
+| 6 | Region launch | Interrupt items spike | Context-switching |
+| 7-8 | Micro-ticket split | Ticket count +60 % | Large items stall |
+| 9-12 | Deadline panic | WIP peaks ~80 | Cycle-time 22 d |
 
 ### 3. Loops
+* **R1** High WIP → longer CT → more carry-over → higher WIP.  
+* **B1** Estimation & refinement no longer limit batch size.
 
-* **R1 (reinforcing):** WIP ↑ → Cycle-time ↑ → Carry-over ↑ → *even more* WIP  
-* **B1 (broken):** Estimation & refinement no longer limit batch size, so balance is lost.
-
-### 4. Key take-aways
-1. Reinstate strict WIP limit (≤50 items).  
-2. Introduce BAU rota to shield sprint work.  
-3. Restore senior capacity / pair-mentoring to rebuild estimation discipline.
+### 4. Take-aways
+1. Reinstate strict WIP limits.  
+2. Shield sprints from BAU via rota/buffer.  
+3. Restore senior capacity, rebuild estimation discipline.
 """)
